@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Groundwater &amp; Irrigation Adoption Platform — Demo Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet Map & Leaflet Heatmap Library -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-title">
+      <h2>Agricultural Water &amp; Irrigation Platform</h2>
+      <span class="prototype-badge">DEMO PROTOTYPE</span>
+    </div>
+    <div id="user-nav-status" style="display: none;">
+      <span id="nav-user-info">Logged in as: <strong id="nav-user-name">-</strong> (<span id="nav-user-role">-</span>)</span>
+      <span id="nav-geo-info" class="geo-badge">-</span>
+      <button onclick="handleLogout()" class="btn-logout">Logout</button>
+    </div>
+  </header>
+
+  <!-- LIVE API MONITOR BANNER -->
+  <div id="api-banner" class="api-banner">
+    <div class="api-banner-header">
+      <span><strong>Live Backend API Monitor</strong> (Communicates with Express backend on :3000)</span>
+      <span id="api-status-badge" class="badge-status">-</span>
+    </div>
+    <div class="api-banner-body">
+      <div><strong>Last Request:</strong> <span id="api-last-endpoint">None</span></div>
+      <div><strong>Response Status/Message:</strong> <span id="api-last-msg">Ready</span></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- 1. LOGIN VIEW -->
+    <section id="view-login" class="card">
+      <h3>System Authentication</h3>
+      <p class="text-muted">Login with pre-assigned actor accounts. Farmers do not have system logins.</p>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="login-email">Email Address:</label>
+          <input type="email" id="login-email" placeholder="user@domain.com" value="test_village_head@example.com">
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password:</label>
+          <input type="password" id="login-password" value="password123">
+        </div>
+      </div>
+      <button onclick="handleManualLogin()" class="btn-primary">Login to System</button>
+
+      <hr>
+      <h4>Pre-Seeded Demo Accounts</h4>
+      <p class="text-muted">Use the buttons below to switch perspectives instantly using real database records.</p>
+      <div class="quick-login-grid">
+        <div class="quick-login-card">
+          <strong>Village Head (Gharaunda Village)</strong>
+          <p>Manages village farms &amp; seasonal crop records. Runs AI irrigation recommendations, views audit results &amp; schemes.</p>
+          <button onclick="quickLogin('test_village_head@example.com')" class="btn-secondary">Login as Village Head</button>
+        </div>
+        <div class="quick-login-card">
+          <strong>District Auditor (Karnal District)</strong>
+          <p>Inspects district farms and records physical irrigation adoption verifications.</p>
+          <button onclick="quickLogin('test_auditor@example.com')" class="btn-secondary">Login as Auditor</button>
+        </div>
+        <div class="quick-login-card">
+          <strong>Platform Administrator</strong>
+          <p>Authoritative manager for the informational government schemes catalog.</p>
+          <button onclick="quickLogin('test_admin@example.com')" class="btn-secondary">Login as Admin</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. VILLAGE HEAD DASHBOARD VIEW -->
+    <section id="view-village-head" style="display: none;">
+      <div class="dashboard-header">
+        <h3>Village Head Dashboard</h3>
+        <p class="text-muted">Assigned Village: <strong id="vh-village-name">Loading...</strong></p>
+      </div>
+
+      <div class="vh-layout">
+        <!-- Left: Farms List & Add Farm Form -->
+        <div class="vh-column">
+          <div class="card">
+            <div class="card-header-flex">
+              <h4>Farms in Assigned Village</h4>
+              <button onclick="loadVillageFarms()" class="btn-small">Refresh Farms</button>
+            </div>
+            <div class="table-container">
+              <table id="farms-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Farm Name</th>
+                    <th>Owner</th>
+                    <th>Area (ha)</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="farms-tbody">
+                  <tr><td colspan="5" class="text-center">Loading farms...</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr>
+            <h4>+ Add Farm to Village</h4>
+            <div class="form-group">
+              <label>Farm Name:</label>
+              <input type="text" id="new-farm-name" placeholder="e.g. Model Farm 1">
+            </div>
+            <div class="form-group">
+              <label>Owner / Farmer Name:</label>
+              <input type="text" id="new-farm-owner" placeholder="e.g. Ram Kumar">
+            </div>
+            <div class="form-group">
+              <label>Total Land Area (Hectares):</label>
+              <input type="number" id="new-farm-area" step="0.1" min="0.1" placeholder="e.g. 2.5">
+            </div>
+            <button onclick="handleCreateFarm()" class="btn-primary">Add Farm</button>
+          </div>
+        </div>
+
+        <!-- Right: Selected Farm Seasonal Crop Records -->
+        <div class="vh-column">
+          <div class="card">
+            <div class="card-header-flex">
+              <h4>Seasonal Crop Records: <span id="selected-farm-title">Select a Farm</span></h4>
+            </div>
+            
+            <div id="farm-crop-records-view">
+              <p class="text-muted" id="no-farm-selected-msg">Click "View Records" on any farm on the left to inspect seasonal crop history, AI irrigation recommendations, and auditor verification statuses.</p>
+              
+              <div id="records-content" style="display: none;">
+                <div class="table-container">
+                  <table id="crop-records-table">
+                    <thead>
+                      <tr>
+                        <th>Year</th>
+                        <th>Season</th>
+                        <th>Crop</th>
+                        <th>Area</th>
+                        <th>Current Method</th>
+                        <th>Audit Status</th>
+                        <th>Actions & Sustainability Score</th>
+                      </tr>
+                    </thead>
+                    <tbody id="crop-records-tbody"></tbody>
+                  </table>
+                </div>
+
+                <hr>
+                <h4>+ Add Seasonal Crop Record</h4>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Season:</label>
+                    <select id="new-rec-season">
+                      <option value="1">Kharif (Monsoon)</option>
+                      <option value="2">Rabi (Winter)</option>
+                      <option value="3">Zaid (Summer)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Agricultural Year:</label>
+                    <input type="text" id="new-rec-year" value="2026">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Crop:</label>
+                    <select id="new-rec-crop">
+                      <optgroup label="Kharif (खरीफ)">
+                        <option value="1">Paddy / Rice (धान / जीरी) — Very High Water</option>
+                        <option value="2">Cotton (कपास) — High Water</option>
+                        <option value="3">Bajra / Pearl Millet (बाजरा) — Low-Medium Water</option>
+                        <option value="4">Maize (मक्का) — Medium Water</option>
+                        <option value="5">Guar / Cluster Bean (गवार) — Low-Medium Water</option>
+                        <option value="6">Sugarcane (गन्ना) — Very High Water</option>
+                        <option value="15">Jowar / Sorghum (ज्वार) — Low-Medium Water</option>
+                        <option value="16">Groundnut (मूंगफली) — Medium Water</option>
+                        <option value="18">Turmeric (हल्दी) — Medium-High Water</option>
+                        <option value="14">Sunflower (सूरजमुखी) — Medium Water</option>
+                      </optgroup>
+                      <optgroup label="Rabi (रबी)">
+                        <option value="7">Wheat (गेहूं) — High Water</option>
+                        <option value="8">Mustard (सरसों) — Low-Medium Water</option>
+                        <option value="9">Barley (जौ) — Medium Water</option>
+                        <option value="10">Gram / Chickpea (चना) — Low-Medium Water</option>
+                        <option value="11">Potato (आलू) — Medium-High Water</option>
+                        <option value="17">Masoor / Lentil (मसूर) — Low Water</option>
+                        <option value="19">Onion (प्याज) — Medium Water</option>
+                      </optgroup>
+                      <optgroup label="Zaid (जायद)">
+                        <option value="12">Moong / Green Gram (मूंग) — Low-Medium Water</option>
+                        <option value="13">Summer Vegetables (सब्जियां) — Medium Water</option>
+                        <option value="20">Tomato (टमाटर) — Medium-High Water</option>
+                        <option value="21">Watermelon (तरबूज) — Medium Water</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Cultivated Area (ha):</label>
+                    <input type="number" id="new-rec-area" step="0.1" min="0.1" value="2.0">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Current Irrigation Method:</label>
+                  <select id="new-rec-method">
+                    <option value="1">Flood Irrigation (पारंपरिक बहाव)</option>
+                    <option value="2">Drip Irrigation (टपक सिंचाई)</option>
+                    <option value="3">Sprinkler Irrigation (फव्वारा सिंचाई)</option>
+                    <option value="4">Furrow Irrigation (नाली सिंचाई)</option>
+                    <option value="5">Underground Pipeline &amp; AWD (भूमिगत पाइपलाइन)</option>
+                    <option value="6">Border Strip Irrigation (सीमा पट्टी सिंचाई)</option>
+                    <option value="7">Raised Bed Planting (उभरी क्यारी सिंचाई)</option>
+                    <option value="8">Pitcher / Pot Irrigation (घड़ा सिंचाई)</option>
+                  </select>
+                </div>
+                <button onclick="handleCreateCropRecord()" class="btn-primary">Save Seasonal Record</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Smart Recommendation Engine Simulator -->
+      <div class="card mt-20">
+        <div class="card-header-flex">
+          <h4>💡 Smart Irrigation Advisory Engine (Live Decision Engine)</h4>
+          <span class="prototype-badge" style="background:#0284c7;">GROUNDWATER &amp; CLIMATE AI</span>
+        </div>
+        <p class="text-muted">Simulate and evaluate scientific irrigation recommendations combining local groundwater table depth, Open-Meteo live rainfall forecasts, and soil texture.</p>
+        
+        <div class="form-row mt-10">
+          <div class="form-group">
+            <label>Select Crop:</label>
+            <select id="rec-sim-crop">
+              <optgroup label="Kharif (खरीफ)">
+                <option value="Rice">Rice / Paddy (धान / जीरी) — Very High Water</option>
+                <option value="Cotton">Cotton (कपास) — High Water</option>
+                <option value="Bajra">Bajra / Pearl Millet (बाजरा) — Low-Medium Water</option>
+                <option value="Maize">Maize (मक्का) — Medium Water</option>
+                <option value="Guar">Guar / Cluster Bean (गवार) — Low-Medium Water</option>
+                <option value="Sugarcane">Sugarcane (गन्ना) — Very High Water</option>
+                <option value="Jowar">Jowar / Sorghum (ज्वार) — Low-Medium Water</option>
+                <option value="Groundnut">Groundnut (मूंगफली) — Medium Water</option>
+                <option value="Turmeric">Turmeric (हल्दी) — Medium-High Water</option>
+                <option value="Sunflower">Sunflower (सूरजमुखी) — Medium Water</option>
+              </optgroup>
+              <optgroup label="Rabi (रबी)">
+                <option value="Wheat">Wheat (गेहूं) — High Water</option>
+                <option value="Mustard">Mustard (सरसों) — Low-Medium Water</option>
+                <option value="Barley">Barley (जौ) — Medium Water</option>
+                <option value="Gram">Gram / Chickpea (चना) — Low-Medium Water</option>
+                <option value="Potato">Potato (आलू) — Medium-High Water</option>
+                <option value="Masoor">Masoor / Lentil (मसूर) — Low Water</option>
+                <option value="Onion">Onion (प्याज) — Medium Water</option>
+              </optgroup>
+              <optgroup label="Zaid (जायद)">
+                <option value="Moong">Moong / Green Gram (मूंग) — Low-Medium Water</option>
+                <option value="Vegetables">Summer Vegetables (सब्जियां) — Medium Water</option>
+                <option value="Tomato">Tomato (टमाटर) — Medium-High Water</option>
+                <option value="Watermelon">Watermelon (तरबूज) — Medium Water</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Current Irrigation Practice:</label>
+            <select id="rec-sim-practice">
+              <option value="Flood">Flood Irrigation (पारंपरिक बहाव)</option>
+              <option value="Furrow">Furrow Irrigation (नाली सिंचाई)</option>
+              <option value="Sprinkler">Sprinkler Irrigation (फव्वारा सिंचाई)</option>
+              <option value="Drip">Drip Irrigation (टपक सिंचाई)</option>
+              <option value="Underground Pipeline &amp; AWD">Underground Pipeline &amp; AWD (भूमिगत पाइपलाइन)</option>
+              <option value="Border">Border Strip Irrigation (सीमा पट्टी सिंचाई)</option>
+              <option value="RaisedBed">Raised Bed Planting (उभरी क्यारी सिंचाई)</option>
+              <option value="Pitcher">Pitcher / Pot Irrigation (घड़ा सिंचाई)</option>
+            </select>
+          </div>
+        </div>
+        <button onclick="runDirectRecommendation()" class="btn-primary" style="background:#059669;">⚡ Generate AI Recommendation Report</button>
+      </div>
+
+      <!-- ML Prediction API Test Section -->
+      <div class="card mt-20">
+        <div class="card-header-flex">
+          <h4>🤖 Live AI Groundwater Prediction Test</h4>
+          <span class="prototype-badge" style="background:#8b5cf6;">ML MICROSERVICE</span>
+        </div>
+        <p class="text-muted">Test the Python FastAPI model connection via the Node.js backend. Type a District, Tehsil, or Station to auto-complete coordinates and parameters.</p>
+        <div class="form-row mt-10">
+          <div class="form-group">
+            <label>District:</label>
+            <input type="text" id="ml-test-district" value="Faridabad" list="ml-districts-list" oninput="handleMLGeoAutoComplete('district')" placeholder="Type or select District...">
+            <datalist id="ml-districts-list"></datalist>
+          </div>
+          <div class="form-group">
+            <label>Tehsil:</label>
+            <input type="text" id="ml-test-tehsil" value="Ballabgarh" list="ml-tehsils-list" oninput="handleMLGeoAutoComplete('tehsil')" placeholder="Type or select Tehsil...">
+            <datalist id="ml-tehsils-list"></datalist>
+          </div>
+          <div class="form-group">
+            <label>Block:</label>
+            <input type="text" id="ml-test-block" value="BALLABGARH" placeholder="Block name">
+          </div>
+          <div class="form-group">
+            <label>Station / Village:</label>
+            <input type="text" id="ml-test-station" value="Station1" list="ml-stations-list" oninput="handleMLGeoAutoComplete('station')" placeholder="Type or select Station...">
+            <datalist id="ml-stations-list"></datalist>
+          </div>
+        </div>
+        <div class="form-row mt-10">
+          <div class="form-group">
+            <label>Latitude:</label>
+            <input type="number" id="ml-test-lat" value="28.33" step="0.0001">
+          </div>
+          <div class="form-group">
+            <label>Longitude:</label>
+            <input type="number" id="ml-test-lon" value="77.31" step="0.0001">
+          </div>
+          <div class="form-group">
+            <label>Year:</label>
+            <input type="number" id="ml-test-year" value="2026">
+          </div>
+          <div class="form-group">
+            <label>Month:</label>
+            <input type="number" id="ml-test-month" value="8" min="1" max="12">
+          </div>
+        </div>
+        <button onclick="runMLPrediction()" class="btn-primary" style="background:#7c3aed; margin-top: 15px;">Run Prediction</button>
+        <div id="ml-test-result" class="mt-10" style="padding: 15px; border-radius: 8px; background: #f3f4f6; display: none;">
+          <strong>Result:</strong> <span id="ml-test-val">-</span>
+        </div>
+      </div>
+
+      <!-- Government Schemes Informational Section -->
+      <div class="card mt-20">
+        <div class="card-header-flex">
+          <h4>Government Schemes Catalog (Informational Outreach)</h4>
+          <button onclick="loadSchemesForView()" class="btn-small">Refresh Schemes</button>
+        </div>
+        <p class="text-muted">Available financial assistance and micro-irrigation schemes retrieved from the database.</p>
+        <div id="vh-schemes-container" class="schemes-grid"></div>
+      </div>
+    </section>
+
+    <!-- 3. AUDITOR DASHBOARD VIEW -->
+    <section id="view-auditor" style="display: none;">
+      <div class="dashboard-header">
+        <h3>Auditor Verification Dashboard</h3>
+        <p class="text-muted">Assigned Jurisdiction: District <strong id="auditor-district-name">Karnal</strong> | Verification Status: <em>Verified Adoption = Checkmark Recorded</em></p>
+      </div>
+
+      <div class="card">
+        <div class="card-header-flex">
+          <h4>District Seasonal Audits &amp; Verification Grid</h4>
+          <button onclick="loadAuditorGrid()" class="btn-small">Refresh Grid</button>
+        </div>
+        <p class="text-muted">Inspect agricultural records across your assigned district and verify post-season irrigation adoption.</p>
+
+        <div class="table-container">
+          <table id="auditor-grid-table">
+            <thead>
+              <tr>
+                <th>Record #</th>
+                <th>Farm</th>
+                <th>Village</th>
+                <th>Year</th>
+                <th>Crop</th>
+                <th>Current Method</th>
+                <th>Actual Method</th>
+                <th>Verification Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="auditor-grid-tbody">
+              <tr><td colspan="9" class="text-center">Loading audits...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ADMIN DASHBOARD VIEW -->
+    <section id="view-admin" style="display: none;">
+      <div class="dashboard-header">
+        <h3>Administrator Dashboard</h3>
+        <p class="text-muted">Government Schemes Management (Informational Catalog)</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header-flex">
+          <h4>Government Schemes</h4>
+          <button onclick="openSchemeModal('create')" class="btn-primary">+ Add New Scheme</button>
+        </div>
+
+        <div class="table-container mt-10">
+          <table id="admin-schemes-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Scheme Name</th>
+                <th>Level</th>
+                <th>Benefit Summary</th>
+                <th>External Portal</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="admin-schemes-tbody">
+              <tr><td colspan="6" class="text-center">Loading schemes...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card mt-20">
+        <div class="card-header-flex">
+          <h4>🌾 Seasonal Sustainability Scores &amp; Intervention Priority Ranking</h4>
+          <button onclick="loadSustainabilityScoresTable()" class="btn-small">Refresh Scores</button>
+        </div>
+        <p class="text-muted">Explainable 0–100 scores derived from actual seasonal audits and water conservation adoption. Priority: <strong>HIGH (>75)</strong>, <strong>MEDIUM (51–75)</strong>, <strong>LOW (≤50)</strong>.</p>
+
+        <div class="table-container mt-10">
+          <table id="admin-scores-table">
+            <thead>
+              <tr>
+                <th>Farm</th>
+                <th>Village</th>
+                <th>District</th>
+                <th>Season / Year</th>
+                <th>Sustainability Score</th>
+                <th>Intervention Priority</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="admin-scores-tbody">
+              <tr><td colspan="7" class="text-center">Loading sustainability scores...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. REGIONAL GROUNDWATER AVAILABILITY HEATMAP SECTION -->
+    <section id="view-groundwater-heatmap" class="card mt-20" style="display: none;">
+      <div class="card-header-flex" style="margin-bottom: 8px;">
+        <div>
+          <h4 style="color: #0284c7; font-size: 1.15rem;">🗺️ Regional Groundwater Assessment GIS Map</h4>
+          <p class="text-muted" style="margin: 4px 0 0 0;">
+            Compare historical (previous years) and predicted groundwater availability, categories, and recharge statistics across Haryana.
+          </p>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <label for="gis-map-mode" style="font-size: 0.8rem; font-weight: bold; color: #0284c7;">GIS Layer View:</label>
+            <select id="gis-map-mode" onchange="loadGroundwaterHeatmap()" style="width: auto; padding: 4px 8px; font-size: 0.8rem; border-color: #0284c7; font-weight: 600;">
+              <option value="category" selected>📊 Category & BCM Resources</option>
+              <option value="dtw">💧 Groundwater Level Depth (DTW meters bgl)</option>
+            </select>
+          </div>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <label for="gis-map-scope" style="font-size: 0.8rem; font-weight: bold; color: #475569;">Scope:</label>
+            <select id="gis-map-scope" onchange="loadGroundwaterHeatmap()" style="width: auto; padding: 4px 8px; font-size: 0.8rem;">
+              <option value="district">District Map (ज़िला)</option>
+              <option value="village">Official SOI Village Boundaries (ग्राम पंचायत / गाँव)</option>
+            </select>
+          </div>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <label for="gis-assessment-year" style="font-size: 0.8rem; font-weight: bold; color: #475569;">Year:</label>
+            <select id="gis-assessment-year" onchange="loadGroundwaterHeatmap()" style="width: auto; padding: 4px 8px; font-size: 0.8rem;">
+              <option value="2025-2026" selected>2025-2026 (Predicted)</option>
+            </select>
+          </div>
+          <button onclick="refreshGroundwaterHeatmap()" class="btn-small" style="padding: 4px 8px;">🔄 Refresh</button>
+        </div>
+      </div>
+
+      <!-- Top Summary Counter Bar -->
+      <div id="gis-summary-bar" class="gis-summary-bar">
+        <div style="font-weight: 600; color: #94a3b8; text-transform: uppercase; font-size: 0.72rem; border-right: 1px solid #334155; padding-right: 12px; margin-right: 4px;">Summary Counters</div>
+        <div id="gis-summary-items-container" style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <div class="gis-summary-item">Total: <span id="summary-count-total" class="gis-summary-val" style="background:#475569; color:#fff;">0</span></div>
+          <div class="gis-summary-item">Safe: <span id="summary-count-safe" class="gis-summary-val" style="background:#15803d; color:#fff;">0</span></div>
+          <div class="gis-summary-item">Semi-Critical: <span id="summary-count-semi" class="gis-summary-val" style="background:#2563eb; color:#fff;">0</span></div>
+          <div class="gis-summary-item">Critical: <span id="summary-count-critical" class="gis-summary-val" style="background:#eab308; color:#0f172a;">0</span></div>
+          <div class="gis-summary-item">Over-Exploited: <span id="summary-count-over" class="gis-summary-val" style="background:#dc2626; color:#fff;">0</span></div>
+        </div>
+      </div>
+
+      <!-- Map & Selected Point Inspector Grid -->
+      <div class="gis-grid">
+        <div id="gis-map-wrapper" style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid #cbd5e1; height: 520px;">
+          <div id="map-year-badge" class="map-year-badge">Assessment year: 2025-2026</div>
+          <button id="map-fullscreen-btn" onclick="toggleMapFullscreen()" class="map-fullscreen-btn">
+            <span id="map-fs-icon">📺</span> <span id="map-fs-text">Fullscreen</span>
+          </button>
+          <div id="groundwater-leaflet-map" style="height: 100%; width: 100%; z-index: 1;"></div>
+          <div id="heatmap-loading-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: rgba(255,255,255,0.85); z-index: 10; font-weight: 500; color: #1e293b;">
+            ⏳ Retrieving assessments and spatial boundaries...
+          </div>
+          <div id="heatmap-error-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; flex-direction: column; justify-content: center; align-items: center; background: rgba(254, 242, 242, 0.95); z-index: 10; color: #991b1b; padding: 20px; text-align: center;">
+            <strong>Groundwater prediction data unavailable</strong>
+            <p id="heatmap-error-msg" style="font-size: 0.85rem; margin-top: 6px;">Please log in to access groundwater assessment GIS.</p>
+            <div style="display:flex; gap:8px; margin-top:10px;">
+              <button onclick="showView('view-login')" class="btn-small" style="background:#2563eb; color:#fff;">🔑 Log In</button>
+              <button onclick="loadGroundwaterHeatmap()" class="btn-small">🔄 Retry</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Area of Focus Detailed Inspector Panel -->
+        <div id="inspector-card" class="inspector-card">
+          <!-- Header and Breadcrumbs -->
+          <div>
+            <div id="inspector-breadcrumbs" class="breadcrumb-trail">INDIA / HARYANA</div>
+            <h5 id="inspector-focus-name" class="focus-header">Haryana</h5>
+            <div id="inspector-focus-year" class="focus-year">YEAR: 2025-2026</div>
+          </div>
+
+          <!-- Resources & Extractions Cards -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span id="metric-extractable-title" class="metric-card-title">Annual Extractable Ground Water Resources (BCM)</span>
+              <span id="card-extractable-val" class="metric-card-value">0.00</span>
+            </div>
+            <div class="metric-card">
+              <span id="metric-extraction-title" class="metric-card-title">Ground Water Extraction for all uses (BCM)</span>
+              <span id="card-extraction-val" class="metric-card-value">0.00</span>
+            </div>
+          </div>
+
+          <!-- Collapsible Metrics Accordions -->
+          <div class="gis-accordion">
+            <div class="gis-accordion-item">
+              <div class="gis-accordion-header" onclick="toggleAccordion('acc-rainfall')">
+                <span>Rainfall (mm)</span>
+                <span id="val-rainfall-summary">0.00</span>
+              </div>
+              <div id="acc-rainfall" class="gis-accordion-content" style="display: none;">
+                Rainfall: <span id="val-rainfall">0.00</span> mm
+              </div>
+            </div>
+
+            <div class="gis-accordion-item">
+              <div class="gis-accordion-header" onclick="toggleAccordion('acc-recharge')">
+                <span>Ground Water Recharge (<span class="unit-label">BCM</span>)</span>
+                <span id="val-recharge-summary">0.00</span>
+              </div>
+              <div id="acc-recharge" class="gis-accordion-content" style="display: none;">
+                Total Recharge: <span id="val-recharge">0.00</span> <span class="unit-label">BCM</span>
+              </div>
+            </div>
+
+            <div class="gis-accordion-item">
+              <div class="gis-accordion-header" onclick="toggleAccordion('acc-discharges')">
+                <span>Natural Discharges (<span class="unit-label">BCM</span>)</span>
+                <span id="val-discharges-summary">0.00</span>
+              </div>
+              <div id="acc-discharges" class="gis-accordion-content" style="display: none;">
+                Natural Discharges: <span id="val-discharges">0.00</span> <span class="unit-label">BCM</span>
+              </div>
+            </div>
+
+            <div class="gis-accordion-item">
+              <div class="gis-accordion-header" onclick="toggleAccordion('acc-extractable')">
+                <span>Annual Extractable Resources (<span class="unit-label">BCM</span>)</span>
+                <span id="val-extractable-summary">0.00</span>
+              </div>
+              <div id="acc-extractable" class="gis-accordion-content" style="display: none;">
+                Annual Extractable Resources: <span id="val-extractable">0.00</span> <span class="unit-label">BCM</span>
+              </div>
+            </div>
+
+            <div class="gis-accordion-item">
+              <div class="gis-accordion-header" onclick="toggleAccordion('acc-extraction')">
+                <span>Ground Water Extraction (<span class="unit-label">BCM</span>)</span>
+                <span id="val-extraction-summary">0.00</span>
+              </div>
+              <div id="acc-extraction" class="gis-accordion-content" style="display: none;">
+                Extraction for all uses: <span id="val-extraction">0.00</span> <span class="unit-label">BCM</span>
+              </div>
+            </div>
+
+            <div class="gis-accordion-item">
+              <div class="gis-accordion-header" onclick="toggleAccordion('acc-stage')">
+                <span>Stage of Extraction (%)</span>
+                <span id="val-stage-summary">0.00%</span>
+              </div>
+              <div id="acc-stage" class="gis-accordion-content" style="display: none;">
+                Stage of Groundwater Extraction: <span id="val-stage">0.00</span>%
+              </div>
+            </div>
+
+            <div class="gis-accordion-item">
+              <div class="gis-accordion-header" onclick="toggleAccordion('acc-dtw')">
+                <span>DTW (m.bgl)</span>
+                <span id="val-dtw-summary">-</span>
+              </div>
+              <div id="acc-dtw" class="gis-accordion-content" style="display: none;">
+                Depth to Water Table: <span id="val-dtw">-</span> meters below ground level
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-region List and Search -->
+          <div class="subregion-section">
+            <input type="text" id="subregion-search" placeholder="Search sub-region..." oninput="onSubregionSearch(this.value)" class="subregion-search-input">
+            <div class="subregion-table-container">
+              <table class="subregion-table">
+                <thead>
+                  <tr>
+                    <th>Location Name</th>
+                    <th>Rainfall</th>
+                    <th>Resources</th>
+                    <th>Extraction</th>
+                    <th>Category</th>
+                  </tr>
+                </thead>
+                <tbody id="subregions-table-body">
+                  <tr><td colspan="5" style="text-align:center;">Loading sub-regions...</td></tr>
+                </tbody>
+                <tfoot>
+                  <tr id="subregions-table-footer" class="total-row">
+                    <td>TOTAL</td>
+                    <td id="foot-rainfall">0.00</td>
+                    <td id="foot-resources">0.00</td>
+                    <td id="foot-extraction">0.00</td>
+                    <td>-</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- SUSTAINABILITY SCORE BREAKDOWN MODAL -->
+    <div id="score-modal" class="modal" style="display: none;">
+      <div class="modal-content" style="width: 550px; max-width: 95%;">
+        <div class="card-header-flex">
+          <h4 style="color:#15803d;">📊 Seasonal Sustainability Score Breakdown</h4>
+          <button onclick="closeScoreModal()" class="btn-small">&times;</button>
+        </div>
+
+        <div id="score-modal-body" class="mt-10">
+          <div class="rec-highlight-card mb-10" style="text-align: center;">
+            <span id="score-modal-priority-badge" class="status-badge adopted" style="font-size: 1rem; padding: 4px 12px;">HIGH PRIORITY</span>
+            <h2 id="score-modal-total" style="font-size: 2.5rem; margin: 10px 0; color: #15803d;">100 / 100</h2>
+            <p id="score-modal-farm-info" class="text-muted" style="margin: 0;">Farm: - | Season: -</p>
+          </div>
+
+          <h5 style="margin-top: 15px; margin-bottom: 10px;">Transparent 50/30/20 Component Evaluation:</h5>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span>✅ <strong>Adoption of Recommended Practice:</strong></span>
+              <span id="score-modal-adoption" style="font-weight: bold; color: #15803d;">50 / 50 pts</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span>🔄 <strong>Continued Historical Adoption:</strong></span>
+              <span id="score-modal-continued" style="font-weight: bold; color: #15803d;">30 / 30 pts</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span>📋 <strong>Seasonal Audit / Field Verification:</strong></span>
+              <span id="score-modal-audit" style="font-weight: bold; color: #15803d;">20 / 20 pts</span>
+            </div>
+          </div>
+
+          <div style="text-align: right; margin-top: 20px;">
+            <button onclick="closeScoreModal()" class="btn-secondary">Close Breakdown</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECOMMENDATION MODAL -->
+    <div id="rec-modal" class="modal" style="display: none;">
+      <div class="modal-content" style="width: 650px; max-width: 95%;">
+        <div class="card-header-flex">
+          <h4 style="color:#0284c7;">🌱 AI Irrigation Advisory &amp; Climate Diagnostics</h4>
+          <button onclick="closeRecModal()" class="btn-small">&times;</button>
+        </div>
+
+        <div id="rec-modal-loading" class="text-center py-20" style="display: none;">
+          <p>⚙️ Running AI + multi-factor engine (Random Forest Model · Groundwater · Rainfall · Soil Profile)...</p>
+        </div>
+
+        <div id="rec-modal-body">
+          <div class="rec-highlight-card mb-10">
+            <div class="rec-header-status">
+              <span id="rec-action-badge" class="status-badge adopted">CHANGE RECOMMENDED</span>
+              <span id="rec-gw-badge" class="status-badge not-adopted">CRITICAL GROUNDWATER</span>
+            </div>
+            <div id="rec-ai-badge-row" style="display:flex; align-items:center; gap:8px; margin-top:8px; flex-wrap:wrap;">
+              <span id="rec-ai-badge" style="display:none; background:linear-gradient(135deg,#6366f1,#8b5cf6); color:#fff; font-size:0.72rem; font-weight:700; padding:3px 10px; border-radius:20px; letter-spacing:0.05em;">🤖 AI PREDICTED</span>
+              <span id="rec-model-source" style="display:none; font-size:0.72rem; color:#6b7280;"></span>
+            </div>
+            <div class="rec-title-row mt-10">
+              <div>
+                <small class="text-muted">CURRENT PRACTICE</small>
+                <div id="rec-current-text" style="font-weight: bold; color: #dc2626;">Flood Irrigation</div>
+              </div>
+              <div style="font-size: 1.5rem;">➔</div>
+              <div>
+                <small class="text-muted">RECOMMENDED PRACTICE</small>
+                <div id="rec-recommended-text" style="font-weight: bold; color: #059669;">Drip Irrigation (टपक सिंचाई)</div>
+              </div>
+            </div>
+
+            <div class="rec-savings-grid mt-10">
+              <div class="rec-saving-item">
+                <span class="saving-val" id="rec-water-saved-pct">55%</span>
+                <span class="saving-lbl">Water Saved</span>
+              </div>
+              <div class="rec-saving-item">
+                <span class="saving-val" id="rec-water-saved-vol">4,800 m³/ha</span>
+                <span class="saving-lbl">Volume Saved</span>
+              </div>
+              <div class="rec-saving-item">
+                <span class="saving-val" id="rec-energy-saved-pct">40%</span>
+                <span class="saving-lbl">Pumping Energy Saved</span>
+              </div>
+            </div>
+
+            <div id="rec-confidence-row" style="display:none; align-items:center; gap:8px; margin-top:8px; padding:6px 10px; background:#f0fdf4; border-radius:8px; border-left:3px solid #22c55e;">
+              <span style="font-size:0.78rem; color:#166534; font-weight:600;">Confidence Score:</span>
+              <span id="rec-confidence-val" style="font-size:0.78rem; color:#15803d; font-weight:700;">—</span>
+              <span style="font-size:0.72rem; color:#4b5563;">| Model prediction with historical CGWB + dataset inputs</span>
+            </div>
+          </div>
+
+          <!-- Environmental Diagnostics Grid -->
+          <h5>Environmental &amp; Geolocation Diagnostics</h5>
+          <div class="diagnostics-grid mt-10">
+            <div class="diag-card">
+              <strong>💧 Groundwater Depth</strong>
+              <div id="diag-gw-val">10.5 m bgl</div>
+              <small id="diag-gw-trend" class="text-muted">Trend: Declining</small>
+            </div>
+            <div class="diag-card">
+              <strong>🌧️ Rainfall &amp; Weather</strong>
+              <div id="diag-weather-val">Rain: 24.3 mm (Forecast: 7.4 mm)</div>
+              <small id="diag-weather-temp" class="text-muted">Temp: 30.8°C | ET₀: 4.2 mm/d</small>
+            </div>
+            <div class="diag-card">
+              <strong>🌍 Soil Profile</strong>
+              <div id="diag-soil-type">Loamy Alluvium</div>
+              <small id="diag-soil-texture" class="text-muted">Texture: Medium</small>
+            </div>
+            <div class="diag-card">
+              <strong>📊 ML Recharge Assessment</strong>
+              <div id="diag-ml-recharge">Recharge: — BCM</div>
+              <small id="diag-ml-extraction" class="text-muted">Extraction: — BCM</small>
+              <small id="diag-ml-stage" class="text-muted" style="display:block">Stage: —%</small>
+            </div>
+          </div>
+
+          <!-- Agronomic Reasons -->
+          <h5 class="mt-10">Agronomic Rationale</h5>
+          <ul id="rec-reasons-list" class="reasons-list mt-10"></ul>
+
+          <div class="modal-actions mt-10">
+            <button onclick="closeRecModal()" class="btn-secondary">Close Advisory</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AUDIT VERIFICATION MODAL -->
+    <div id="audit-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <div class="card-header-flex">
+          <h4>Record Field Audit Verification</h4>
+          <button onclick="closeAuditModal()" class="btn-small">&times;</button>
+        </div>
+        <div class="audit-summary-box mb-10">
+          <p><strong>Farm:</strong> <span id="modal-audit-farm">-</span> (<span id="modal-audit-village">-</span>)</p>
+          <p><strong>Season/Year:</strong> <span id="modal-audit-season">-</span> | <strong>Crop:</strong> <span id="modal-audit-crop">-</span></p>
+        </div>
+
+        <input type="hidden" id="modal-audit-id">
+        <input type="hidden" id="modal-audit-record-id">
+
+        <div class="form-group">
+          <label>Actual Observed Irrigation Method:</label>
+          <select id="modal-audit-method">
+            <option value="2">Drip Irrigation (Efficient)</option>
+            <option value="3">Sprinkler Irrigation (Efficient)</option>
+            <option value="1">Flood Irrigation (Conventional)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Did the farm adopt the required water-saving irrigation method?</label>
+          <div class="radio-toggle-group">
+            <label class="radio-option">
+              <input type="radio" name="adoption_radio" value="ADOPTED" checked>
+              <strong>YES (ADOPTED)</strong>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="adoption_radio" value="NOT_ADOPTED">
+              <strong>NO (NOT ADOPTED)</strong>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Audit Date:</label>
+          <input type="date" id="modal-audit-date">
+        </div>
+
+        <div class="form-group">
+          <label>Field Notes / Inspection Observations:</label>
+          <textarea id="modal-audit-notes" rows="2" placeholder="e.g. Field inspection confirmed active drip lateral network installed."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button onclick="saveAuditVerification()" class="btn-primary">Submit Verification</button>
+          <button onclick="closeAuditModal()" class="btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCHEME CREATE/EDIT MODAL -->
+    <div id="scheme-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <div class="card-header-flex">
+          <h4 id="scheme-modal-title">Add Government Scheme</h4>
+          <button onclick="closeSchemeModal()" class="btn-small">&times;</button>
+        </div>
+        <input type="hidden" id="modal-scheme-id">
+        <div class="form-group">
+          <label>Scheme Name:</label>
+          <input type="text" id="modal-scheme-name" placeholder="e.g. Drip Irrigation Subsidy">
+        </div>
+        <div class="form-group">
+          <label>Description:</label>
+          <textarea id="modal-scheme-desc" rows="3" placeholder="Scheme overview and purpose"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Government Level:</label>
+            <select id="modal-scheme-level">
+              <option value="STATE">STATE</option>
+              <option value="NATIONAL">NATIONAL</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>External Portal Link:</label>
+            <input type="url" id="modal-scheme-link" placeholder="https://example.gov.in">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Benefit Description:</label>
+          <input type="text" id="modal-scheme-benefit" placeholder="e.g. Financial assistance for micro-irrigation hardware">
+        </div>
+        <div class="form-group">
+          <label>Eligibility Criteria (Informational Text):</label>
+          <input type="text" id="modal-scheme-eligibility" placeholder="e.g. Agricultural landholders in notified districts">
+        </div>
+        <div class="form-group">
+          <label>Application Information:</label>
+          <input type="text" id="modal-scheme-appinfo" placeholder="e.g. Apply through state department portal">
+        </div>
+        <div class="modal-actions">
+          <button onclick="saveSchemeModal()" class="btn-primary">Save Scheme</button>
+          <button onclick="closeSchemeModal()" class="btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

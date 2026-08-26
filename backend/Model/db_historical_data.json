@@ -1,0 +1,3402 @@
+{
+  "districts": [
+    {
+      "district_id": 27,
+      "name": "Score District Karnal"
+    },
+    {
+      "district_id": 28,
+      "name": "Score District Kurukshetra"
+    },
+    {
+      "district_id": 43,
+      "name": "Definitive Dist Karnal"
+    },
+    {
+      "district_id": 44,
+      "name": "Definitive Dist Kurukshetra"
+    },
+    {
+      "district_id": 47,
+      "name": "Normalized Dist Karnal"
+    },
+    {
+      "district_id": 48,
+      "name": "Normalized Dist Kurukshetra"
+    },
+    {
+      "district_id": 1,
+      "name": "Karnal"
+    },
+    {
+      "district_id": 2,
+      "name": "Kurukshetra"
+    },
+    {
+      "district_id": 3,
+      "name": "Faridabad"
+    },
+    {
+      "district_id": 4,
+      "name": "Panchkula"
+    },
+    {
+      "district_id": 5,
+      "name": "Ambala"
+    },
+    {
+      "district_id": 6,
+      "name": "Bhiwani"
+    },
+    {
+      "district_id": 7,
+      "name": "Charkhi Dadri"
+    },
+    {
+      "district_id": 9,
+      "name": "Fatehabad"
+    },
+    {
+      "district_id": 10,
+      "name": "Gurugram"
+    },
+    {
+      "district_id": 11,
+      "name": "Hisar"
+    },
+    {
+      "district_id": 12,
+      "name": "Jhajjar"
+    },
+    {
+      "district_id": 13,
+      "name": "Jind"
+    },
+    {
+      "district_id": 14,
+      "name": "Kaithal"
+    },
+    {
+      "district_id": 17,
+      "name": "Mahendragarh"
+    },
+    {
+      "district_id": 18,
+      "name": "Nuh"
+    },
+    {
+      "district_id": 19,
+      "name": "Palwal"
+    },
+    {
+      "district_id": 21,
+      "name": "Panipat"
+    },
+    {
+      "district_id": 22,
+      "name": "Rewari"
+    },
+    {
+      "district_id": 23,
+      "name": "Rohtak"
+    },
+    {
+      "district_id": 24,
+      "name": "Sirsa"
+    },
+    {
+      "district_id": 25,
+      "name": "Sonipat"
+    },
+    {
+      "district_id": 26,
+      "name": "Yamunanagar"
+    }
+  ],
+  "villages": [
+    {
+      "village_id": 2,
+      "name": "Indri",
+      "district_id": 1
+    },
+    {
+      "village_id": 10,
+      "name": "Adampur",
+      "district_id": 11
+    },
+    {
+      "village_id": 11,
+      "name": "Adhoya",
+      "district_id": 2
+    },
+    {
+      "village_id": 88,
+      "name": "Score Village Gharaunda",
+      "district_id": 27
+    },
+    {
+      "village_id": 89,
+      "name": "Score Village Pehowa",
+      "district_id": 28
+    },
+    {
+      "village_id": 12,
+      "name": "Agaon",
+      "district_id": 18
+    },
+    {
+      "village_id": 13,
+      "name": "Agroha",
+      "district_id": 11
+    },
+    {
+      "village_id": 14,
+      "name": "Aharwan Med",
+      "district_id": 9
+    },
+    {
+      "village_id": 15,
+      "name": "Ahmadpur Majra",
+      "district_id": 25
+    },
+    {
+      "village_id": 16,
+      "name": "Ahulana",
+      "district_id": 25
+    },
+    {
+      "village_id": 17,
+      "name": "Ajaib",
+      "district_id": 23
+    },
+    {
+      "village_id": 18,
+      "name": "Ajrana Kalan S",
+      "district_id": 2
+    },
+    {
+      "village_id": 19,
+      "name": "Akaira",
+      "district_id": 18
+    },
+    {
+      "village_id": 20,
+      "name": "Alak Pura",
+      "district_id": 6
+    },
+    {
+      "village_id": 21,
+      "name": "Alampur",
+      "district_id": 6
+    },
+    {
+      "village_id": 22,
+      "name": "Alewa",
+      "district_id": 13
+    },
+    {
+      "village_id": 23,
+      "name": "Ali Mohmmad",
+      "district_id": 24
+    },
+    {
+      "village_id": 24,
+      "name": "Ambala Cantt",
+      "district_id": 5
+    },
+    {
+      "village_id": 25,
+      "name": "Amin S",
+      "district_id": 1
+    },
+    {
+      "village_id": 26,
+      "name": "Anta",
+      "district_id": 13
+    },
+    {
+      "village_id": 27,
+      "name": "Antawa",
+      "district_id": 26
+    },
+    {
+      "village_id": 28,
+      "name": "Assandh",
+      "district_id": 1
+    },
+    {
+      "village_id": 29,
+      "name": "Atela",
+      "district_id": 7
+    },
+    {
+      "village_id": 30,
+      "name": "Badopal",
+      "district_id": 9
+    },
+    {
+      "village_id": 31,
+      "name": "Ballabhgarh",
+      "district_id": 3
+    },
+    {
+      "village_id": 32,
+      "name": "Barda",
+      "district_id": 17
+    },
+    {
+      "village_id": 33,
+      "name": "Baroda",
+      "district_id": 13
+    },
+    {
+      "village_id": 34,
+      "name": "Barwala",
+      "district_id": 4
+    },
+    {
+      "village_id": 35,
+      "name": "Bhiwani",
+      "district_id": 6
+    },
+    {
+      "village_id": 36,
+      "name": "Chika",
+      "district_id": 14
+    },
+    {
+      "village_id": 37,
+      "name": "Dabwali",
+      "district_id": 24
+    },
+    {
+      "village_id": 38,
+      "name": "Ellenabed",
+      "district_id": 24
+    },
+    {
+      "village_id": 39,
+      "name": "Faridabad",
+      "district_id": 3
+    },
+    {
+      "village_id": 40,
+      "name": "Farrukh Nagar",
+      "district_id": 10
+    },
+    {
+      "village_id": 41,
+      "name": "Ganaur",
+      "district_id": 25
+    },
+    {
+      "village_id": 43,
+      "name": "Gohana",
+      "district_id": 25
+    },
+    {
+      "village_id": 44,
+      "name": "Hansi S",
+      "district_id": 11
+    },
+    {
+      "village_id": 45,
+      "name": "Hathin",
+      "district_id": 19
+    },
+    {
+      "village_id": 46,
+      "name": "Hissar",
+      "district_id": 11
+    },
+    {
+      "village_id": 47,
+      "name": "Hodel",
+      "district_id": 19
+    },
+    {
+      "village_id": 49,
+      "name": "Jagadhri",
+      "district_id": 26
+    },
+    {
+      "village_id": 50,
+      "name": "Jhajjar",
+      "district_id": 12
+    },
+    {
+      "village_id": 51,
+      "name": "Jind",
+      "district_id": 13
+    },
+    {
+      "village_id": 52,
+      "name": "Kaithal S",
+      "district_id": 14
+    },
+    {
+      "village_id": 53,
+      "name": "Kalanaur",
+      "district_id": 23
+    },
+    {
+      "village_id": 54,
+      "name": "Kalayat",
+      "district_id": 14
+    },
+    {
+      "village_id": 55,
+      "name": "Kharkhauda",
+      "district_id": 25
+    },
+    {
+      "village_id": 56,
+      "name": "Kosli",
+      "district_id": 22
+    },
+    {
+      "village_id": 57,
+      "name": "Loharu",
+      "district_id": 6
+    },
+    {
+      "village_id": 58,
+      "name": "Manesar",
+      "district_id": 10
+    },
+    {
+      "village_id": 59,
+      "name": "Naraingarh",
+      "district_id": 5
+    },
+    {
+      "village_id": 60,
+      "name": "Narnaul",
+      "district_id": 17
+    },
+    {
+      "village_id": 61,
+      "name": "Nuh",
+      "district_id": 18
+    },
+    {
+      "village_id": 62,
+      "name": "Palwal",
+      "district_id": 19
+    },
+    {
+      "village_id": 63,
+      "name": "Pataudi",
+      "district_id": 10
+    },
+    {
+      "village_id": 64,
+      "name": "Pehowa 2(m)",
+      "district_id": 2
+    },
+    {
+      "village_id": 65,
+      "name": "Pillukhera",
+      "district_id": 13
+    },
+    {
+      "village_id": 66,
+      "name": "Punhana",
+      "district_id": 18
+    },
+    {
+      "village_id": 67,
+      "name": "Radaur S",
+      "district_id": 26
+    },
+    {
+      "village_id": 68,
+      "name": "Raipur Rani",
+      "district_id": 4
+    },
+    {
+      "village_id": 69,
+      "name": "Ratia",
+      "district_id": 9
+    },
+    {
+      "village_id": 70,
+      "name": "Rohtak",
+      "district_id": 23
+    },
+    {
+      "village_id": 71,
+      "name": "Sadhaura",
+      "district_id": 26
+    },
+    {
+      "village_id": 72,
+      "name": "Safidon 2(m)",
+      "district_id": 13
+    },
+    {
+      "village_id": 73,
+      "name": "Saha M",
+      "district_id": 5
+    },
+    {
+      "village_id": 74,
+      "name": "Samalkha",
+      "district_id": 21
+    },
+    {
+      "village_id": 75,
+      "name": "Shahbad 1(d)",
+      "district_id": 2
+    },
+    {
+      "village_id": 76,
+      "name": "Shahzadpur",
+      "district_id": 5
+    },
+    {
+      "village_id": 77,
+      "name": "Sirsa",
+      "district_id": 6
+    },
+    {
+      "village_id": 78,
+      "name": "Sirsa",
+      "district_id": 24
+    },
+    {
+      "village_id": 79,
+      "name": "Siwani",
+      "district_id": 6
+    },
+    {
+      "village_id": 80,
+      "name": "Siwan",
+      "district_id": 14
+    },
+    {
+      "village_id": 81,
+      "name": "Sohna",
+      "district_id": 10
+    },
+    {
+      "village_id": 82,
+      "name": "Taraori",
+      "district_id": 1
+    },
+    {
+      "village_id": 83,
+      "name": "Tohana",
+      "district_id": 9
+    },
+    {
+      "village_id": 84,
+      "name": "Tosham",
+      "district_id": 6
+    },
+    {
+      "village_id": 85,
+      "name": "Uchana",
+      "district_id": 13
+    },
+    {
+      "village_id": 86,
+      "name": "Uklana",
+      "district_id": 11
+    },
+    {
+      "village_id": 87,
+      "name": "Yara",
+      "district_id": 2
+    },
+    {
+      "village_id": 104,
+      "name": "Definitive Vil Gharaunda",
+      "district_id": 43
+    },
+    {
+      "village_id": 105,
+      "name": "Definitive Vil Pehowa",
+      "district_id": 44
+    },
+    {
+      "village_id": 108,
+      "name": "Normalized Vil Gharaunda",
+      "district_id": 47
+    },
+    {
+      "village_id": 109,
+      "name": "Normalized Vil Pehowa",
+      "district_id": 48
+    },
+    {
+      "village_id": 1,
+      "name": "Gharaunda",
+      "district_id": 1
+    },
+    {
+      "village_id": 3,
+      "name": "Pehowa",
+      "district_id": 2
+    },
+    {
+      "village_id": 4,
+      "name": "Shahbad",
+      "district_id": 2
+    },
+    {
+      "village_id": 5,
+      "name": "Ballabgarh",
+      "district_id": 3
+    },
+    {
+      "village_id": 6,
+      "name": "Abdullapur",
+      "district_id": 4
+    },
+    {
+      "village_id": 8,
+      "name": "Achheja",
+      "district_id": 19
+    },
+    {
+      "village_id": 9,
+      "name": "Adampur",
+      "district_id": 7
+    }
+  ],
+  "assessments": [
+    {
+      "district_id": 1,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.12,
+      "extraction_all_uses_bcm": 0.82,
+      "rainfall_mm": 515,
+      "recharge_bcm": 1.23,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 1,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.17,
+      "extraction_all_uses_bcm": 1.09,
+      "rainfall_mm": 545,
+      "recharge_bcm": 1.29,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 2,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.24,
+      "extraction_all_uses_bcm": 1.17,
+      "rainfall_mm": 530,
+      "recharge_bcm": 1.36,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 2,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.29,
+      "extraction_all_uses_bcm": 1.64,
+      "rainfall_mm": 560,
+      "recharge_bcm": 1.42,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 3,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.36,
+      "extraction_all_uses_bcm": 1.74,
+      "rainfall_mm": 545,
+      "recharge_bcm": 1.5,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 3,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.41,
+      "extraction_all_uses_bcm": 0.89,
+      "rainfall_mm": 575,
+      "recharge_bcm": 1.55,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 4,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.48,
+      "extraction_all_uses_bcm": 0.95,
+      "rainfall_mm": 560,
+      "recharge_bcm": 1.63,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 4,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.53,
+      "extraction_all_uses_bcm": 0.31,
+      "rainfall_mm": 590,
+      "recharge_bcm": 1.68,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 5,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.6,
+      "extraction_all_uses_bcm": 0.32,
+      "rainfall_mm": 575,
+      "recharge_bcm": 1.76,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 5,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.65,
+      "extraction_all_uses_bcm": 0.66,
+      "rainfall_mm": 605,
+      "recharge_bcm": 1.81,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 6,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.72,
+      "extraction_all_uses_bcm": 0.71,
+      "rainfall_mm": 590,
+      "recharge_bcm": 1.89,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 6,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.77,
+      "extraction_all_uses_bcm": 1.38,
+      "rainfall_mm": 620,
+      "recharge_bcm": 1.95,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 7,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.84,
+      "extraction_all_uses_bcm": 1.45,
+      "rainfall_mm": 605,
+      "recharge_bcm": 2.02,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 7,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.89,
+      "extraction_all_uses_bcm": 1.74,
+      "rainfall_mm": 635,
+      "recharge_bcm": 2.08,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 9,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.08,
+      "extraction_all_uses_bcm": 2.79,
+      "rainfall_mm": 635,
+      "recharge_bcm": 2.29,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 9,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.13,
+      "extraction_all_uses_bcm": 1.47,
+      "rainfall_mm": 665,
+      "recharge_bcm": 2.34,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 10,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.2,
+      "extraction_all_uses_bcm": 1.54,
+      "rainfall_mm": 650,
+      "recharge_bcm": 2.42,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 10,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.25,
+      "extraction_all_uses_bcm": 0.45,
+      "rainfall_mm": 680,
+      "recharge_bcm": 2.48,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 11,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.32,
+      "extraction_all_uses_bcm": 0.46,
+      "rainfall_mm": 665,
+      "recharge_bcm": 2.55,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 11,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.37,
+      "extraction_all_uses_bcm": 1.09,
+      "rainfall_mm": 695,
+      "recharge_bcm": 2.61,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 12,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.44,
+      "extraction_all_uses_bcm": 1.15,
+      "rainfall_mm": 680,
+      "recharge_bcm": 2.68,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 12,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.49,
+      "extraction_all_uses_bcm": 2.09,
+      "rainfall_mm": 710,
+      "recharge_bcm": 2.74,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 13,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.56,
+      "extraction_all_uses_bcm": 2.18,
+      "rainfall_mm": 695,
+      "recharge_bcm": 2.82,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 13,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.61,
+      "extraction_all_uses_bcm": 2.56,
+      "rainfall_mm": 725,
+      "recharge_bcm": 2.87,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 14,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.68,
+      "extraction_all_uses_bcm": 2.47,
+      "rainfall_mm": 710,
+      "recharge_bcm": 2.95,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 14,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.73,
+      "extraction_all_uses_bcm": 3.79,
+      "rainfall_mm": 740,
+      "recharge_bcm": 3,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 17,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.04,
+      "extraction_all_uses_bcm": 0.21,
+      "rainfall_mm": 755,
+      "recharge_bcm": 1.14,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 17,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.09,
+      "extraction_all_uses_bcm": 0.4,
+      "rainfall_mm": 785,
+      "recharge_bcm": 1.2,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 18,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.16,
+      "extraction_all_uses_bcm": 0.44,
+      "rainfall_mm": 770,
+      "recharge_bcm": 1.28,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 18,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.21,
+      "extraction_all_uses_bcm": 0.91,
+      "rainfall_mm": 800,
+      "recharge_bcm": 1.33,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 19,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.28,
+      "extraction_all_uses_bcm": 0.97,
+      "rainfall_mm": 785,
+      "recharge_bcm": 1.41,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 19,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.33,
+      "extraction_all_uses_bcm": 1.29,
+      "rainfall_mm": 815,
+      "recharge_bcm": 1.46,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 21,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.52,
+      "extraction_all_uses_bcm": 2.22,
+      "rainfall_mm": 815,
+      "recharge_bcm": 1.67,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 21,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.57,
+      "extraction_all_uses_bcm": 0.96,
+      "rainfall_mm": 845,
+      "recharge_bcm": 1.73,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 22,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.64,
+      "extraction_all_uses_bcm": 1.02,
+      "rainfall_mm": 830,
+      "recharge_bcm": 1.8,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 22,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.69,
+      "extraction_all_uses_bcm": 0.34,
+      "rainfall_mm": 860,
+      "recharge_bcm": 1.86,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 23,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.76,
+      "extraction_all_uses_bcm": 0.35,
+      "rainfall_mm": 845,
+      "recharge_bcm": 1.94,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 23,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.81,
+      "extraction_all_uses_bcm": 0.78,
+      "rainfall_mm": 875,
+      "recharge_bcm": 1.99,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 24,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.88,
+      "extraction_all_uses_bcm": 0.83,
+      "rainfall_mm": 860,
+      "recharge_bcm": 2.07,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 24,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 1.93,
+      "extraction_all_uses_bcm": 1.56,
+      "rainfall_mm": 890,
+      "recharge_bcm": 2.12,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 25,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2,
+      "extraction_all_uses_bcm": 1.64,
+      "rainfall_mm": 875,
+      "recharge_bcm": 2.2,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 25,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.05,
+      "extraction_all_uses_bcm": 1.97,
+      "rainfall_mm": 905,
+      "recharge_bcm": 2.25,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 26,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.12,
+      "extraction_all_uses_bcm": 2.06,
+      "rainfall_mm": 890,
+      "recharge_bcm": 2.33,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 26,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.17,
+      "extraction_all_uses_bcm": 3.28,
+      "rainfall_mm": 920,
+      "recharge_bcm": 2.39,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 27,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.24,
+      "extraction_all_uses_bcm": 3.4,
+      "rainfall_mm": 905,
+      "recharge_bcm": 2.46,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 27,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.29,
+      "extraction_all_uses_bcm": 1.53,
+      "rainfall_mm": 935,
+      "recharge_bcm": 2.52,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 28,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.36,
+      "extraction_all_uses_bcm": 1.6,
+      "rainfall_mm": 920,
+      "recharge_bcm": 2.6,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 28,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.41,
+      "extraction_all_uses_bcm": 0.48,
+      "rainfall_mm": 950,
+      "recharge_bcm": 2.65,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 43,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.16,
+      "extraction_all_uses_bcm": 1.84,
+      "rainfall_mm": 545,
+      "recharge_bcm": 2.38,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 43,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.21,
+      "extraction_all_uses_bcm": 2.06,
+      "rainfall_mm": 575,
+      "recharge_bcm": 2.43,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 44,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.28,
+      "extraction_all_uses_bcm": 2.14,
+      "rainfall_mm": 560,
+      "recharge_bcm": 2.51,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 44,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.33,
+      "extraction_all_uses_bcm": 3.24,
+      "rainfall_mm": 590,
+      "recharge_bcm": 2.56,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 47,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.64,
+      "extraction_all_uses_bcm": 0.53,
+      "rainfall_mm": 605,
+      "recharge_bcm": 2.9,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 47,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.69,
+      "extraction_all_uses_bcm": 1,
+      "rainfall_mm": 635,
+      "recharge_bcm": 2.96,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 48,
+      "village_id": null,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.76,
+      "extraction_all_uses_bcm": 1.05,
+      "rainfall_mm": 620,
+      "recharge_bcm": 3.04,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": 48,
+      "village_id": null,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 2.81,
+      "extraction_all_uses_bcm": 2.11,
+      "rainfall_mm": 650,
+      "recharge_bcm": 3.09,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 1,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.018,
+      "extraction_all_uses_bcm": 0.0106,
+      "rainfall_mm": 482,
+      "recharge_bcm": 0.0194,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 1,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.019,
+      "extraction_all_uses_bcm": 0.0029,
+      "rainfall_mm": 507,
+      "recharge_bcm": 0.0205,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 2,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.02,
+      "extraction_all_uses_bcm": 0.003,
+      "rainfall_mm": 490,
+      "recharge_bcm": 0.0216,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 2,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.021,
+      "extraction_all_uses_bcm": 0.0095,
+      "rainfall_mm": 515,
+      "recharge_bcm": 0.0227,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 3,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.028,
+      "extraction_all_uses_bcm": 0.0403,
+      "rainfall_mm": 522,
+      "recharge_bcm": 0.0302,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 3,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.029,
+      "extraction_all_uses_bcm": 0.0186,
+      "rainfall_mm": 547,
+      "recharge_bcm": 0.0313,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 4,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.0195,
+      "rainfall_mm": 530,
+      "recharge_bcm": 0.0324,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 4,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0046,
+      "rainfall_mm": 555,
+      "recharge_bcm": 0.0335,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 5,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.038,
+      "extraction_all_uses_bcm": 0.0376,
+      "rainfall_mm": 562,
+      "recharge_bcm": 0.041,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 5,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.039,
+      "extraction_all_uses_bcm": 0.0581,
+      "rainfall_mm": 587,
+      "recharge_bcm": 0.0421,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 6,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.046,
+      "extraction_all_uses_bcm": 0.0221,
+      "rainfall_mm": 594,
+      "recharge_bcm": 0.0497,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 6,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.047,
+      "extraction_all_uses_bcm": 0.039,
+      "rainfall_mm": 619,
+      "recharge_bcm": 0.0508,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 8,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.02,
+      "extraction_all_uses_bcm": 0.003,
+      "rainfall_mm": 970,
+      "recharge_bcm": 0.0216,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 8,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.021,
+      "extraction_all_uses_bcm": 0.0095,
+      "rainfall_mm": 995,
+      "recharge_bcm": 0.0227,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 9,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.012,
+      "rainfall_mm": 690,
+      "recharge_bcm": 0.0324,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 9,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0232,
+      "rainfall_mm": 715,
+      "recharge_bcm": 0.0335,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 10,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.016,
+      "extraction_all_uses_bcm": 0.0125,
+      "rainfall_mm": 794,
+      "recharge_bcm": 0.0173,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 10,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.017,
+      "extraction_all_uses_bcm": 0.0167,
+      "rainfall_mm": 819,
+      "recharge_bcm": 0.0184,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 11,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.044,
+      "extraction_all_uses_bcm": 0.0066,
+      "rainfall_mm": 586,
+      "recharge_bcm": 0.0475,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 11,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.045,
+      "extraction_all_uses_bcm": 0.0212,
+      "rainfall_mm": 611,
+      "recharge_bcm": 0.0486,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 12,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.022,
+      "extraction_all_uses_bcm": 0.0101,
+      "rainfall_mm": 978,
+      "recharge_bcm": 0.0238,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 12,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.023,
+      "extraction_all_uses_bcm": 0.0186,
+      "rainfall_mm": 1003,
+      "recharge_bcm": 0.0248,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 13,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.022,
+      "extraction_all_uses_bcm": 0.0123,
+      "rainfall_mm": 818,
+      "recharge_bcm": 0.0238,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 13,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.023,
+      "extraction_all_uses_bcm": 0.0034,
+      "rainfall_mm": 843,
+      "recharge_bcm": 0.0248,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 14,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.012,
+      "extraction_all_uses_bcm": 0.0018,
+      "rainfall_mm": 778,
+      "recharge_bcm": 0.013,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 14,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.013,
+      "extraction_all_uses_bcm": 0.0053,
+      "rainfall_mm": 803,
+      "recharge_bcm": 0.014,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 15,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.012,
+      "rainfall_mm": 470,
+      "recharge_bcm": 0.0324,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 15,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0232,
+      "rainfall_mm": 495,
+      "recharge_bcm": 0.0335,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 16,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.032,
+      "extraction_all_uses_bcm": 0.0243,
+      "rainfall_mm": 478,
+      "recharge_bcm": 0.0346,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 16,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.033,
+      "extraction_all_uses_bcm": 0.0317,
+      "rainfall_mm": 503,
+      "recharge_bcm": 0.0356,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 17,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.022,
+      "extraction_all_uses_bcm": 0.0211,
+      "rainfall_mm": 1138,
+      "recharge_bcm": 0.0238,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 17,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.023,
+      "extraction_all_uses_bcm": 0.0336,
+      "rainfall_mm": 463,
+      "recharge_bcm": 0.0248,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 18,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.018,
+      "extraction_all_uses_bcm": 0.0079,
+      "rainfall_mm": 642,
+      "recharge_bcm": 0.0194,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 18,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.019,
+      "extraction_all_uses_bcm": 0.015,
+      "rainfall_mm": 667,
+      "recharge_bcm": 0.0205,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 19,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.036,
+      "extraction_all_uses_bcm": 0.0281,
+      "rainfall_mm": 1034,
+      "recharge_bcm": 0.0389,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 19,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.037,
+      "extraction_all_uses_bcm": 0.0363,
+      "rainfall_mm": 1059,
+      "recharge_bcm": 0.04,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 20,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.046,
+      "extraction_all_uses_bcm": 0.0451,
+      "rainfall_mm": 754,
+      "recharge_bcm": 0.0497,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 20,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.047,
+      "extraction_all_uses_bcm": 0.0696,
+      "rainfall_mm": 779,
+      "recharge_bcm": 0.0508,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 21,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.048,
+      "extraction_all_uses_bcm": 0.0715,
+      "rainfall_mm": 762,
+      "recharge_bcm": 0.0518,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 21,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.049,
+      "extraction_all_uses_bcm": 0.0314,
+      "rainfall_mm": 787,
+      "recharge_bcm": 0.0529,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 22,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.012,
+      "extraction_all_uses_bcm": 0.0091,
+      "rainfall_mm": 938,
+      "recharge_bcm": 0.013,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 22,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.013,
+      "extraction_all_uses_bcm": 0.0125,
+      "rainfall_mm": 963,
+      "recharge_bcm": 0.014,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 23,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.04,
+      "extraction_all_uses_bcm": 0.006,
+      "rainfall_mm": 510,
+      "recharge_bcm": 0.0432,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 23,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.041,
+      "extraction_all_uses_bcm": 0.0185,
+      "rainfall_mm": 535,
+      "recharge_bcm": 0.0443,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 24,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.048,
+      "extraction_all_uses_bcm": 0.0715,
+      "rainfall_mm": 762,
+      "recharge_bcm": 0.0518,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 24,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.049,
+      "extraction_all_uses_bcm": 0.0314,
+      "rainfall_mm": 787,
+      "recharge_bcm": 0.0529,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 25,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.026,
+      "extraction_all_uses_bcm": 0.0177,
+      "rainfall_mm": 674,
+      "recharge_bcm": 0.0281,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 25,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.027,
+      "extraction_all_uses_bcm": 0.0041,
+      "rainfall_mm": 699,
+      "recharge_bcm": 0.0292,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 26,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.02,
+      "extraction_all_uses_bcm": 0.003,
+      "rainfall_mm": 970,
+      "recharge_bcm": 0.0216,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 26,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.021,
+      "extraction_all_uses_bcm": 0.0095,
+      "rainfall_mm": 995,
+      "recharge_bcm": 0.0227,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 27,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.02,
+      "extraction_all_uses_bcm": 0.028,
+      "rainfall_mm": 590,
+      "recharge_bcm": 0.0216,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 27,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.021,
+      "extraction_all_uses_bcm": 0.0115,
+      "rainfall_mm": 615,
+      "recharge_bcm": 0.0227,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 28,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.032,
+      "extraction_all_uses_bcm": 0.0243,
+      "rainfall_mm": 698,
+      "recharge_bcm": 0.0346,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 28,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.033,
+      "extraction_all_uses_bcm": 0.0317,
+      "rainfall_mm": 723,
+      "recharge_bcm": 0.0356,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 29,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.0285,
+      "rainfall_mm": 850,
+      "recharge_bcm": 0.0324,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 29,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0419,
+      "rainfall_mm": 875,
+      "recharge_bcm": 0.0335,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 30,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.044,
+      "extraction_all_uses_bcm": 0.0625,
+      "rainfall_mm": 906,
+      "recharge_bcm": 0.0475,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 30,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.045,
+      "extraction_all_uses_bcm": 0.0302,
+      "rainfall_mm": 931,
+      "recharge_bcm": 0.0486,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 31,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.01,
+      "extraction_all_uses_bcm": 0.0065,
+      "rainfall_mm": 770,
+      "recharge_bcm": 0.0108,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 31,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.011,
+      "extraction_all_uses_bcm": 0.0017,
+      "rainfall_mm": 795,
+      "recharge_bcm": 0.0119,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 32,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.016,
+      "extraction_all_uses_bcm": 0.0024,
+      "rainfall_mm": 1114,
+      "recharge_bcm": 0.0173,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 32,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.017,
+      "extraction_all_uses_bcm": 0.0073,
+      "rainfall_mm": 1139,
+      "recharge_bcm": 0.0184,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 33,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.034,
+      "extraction_all_uses_bcm": 0.0143,
+      "rainfall_mm": 1026,
+      "recharge_bcm": 0.0367,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 33,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.035,
+      "extraction_all_uses_bcm": 0.027,
+      "rainfall_mm": 1051,
+      "recharge_bcm": 0.0378,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 34,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.022,
+      "extraction_all_uses_bcm": 0.0123,
+      "rainfall_mm": 818,
+      "recharge_bcm": 0.0238,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 34,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.023,
+      "extraction_all_uses_bcm": 0.0034,
+      "rainfall_mm": 843,
+      "recharge_bcm": 0.0248,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 35,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.036,
+      "extraction_all_uses_bcm": 0.0054,
+      "rainfall_mm": 874,
+      "recharge_bcm": 0.0389,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 35,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.037,
+      "extraction_all_uses_bcm": 0.0159,
+      "rainfall_mm": 899,
+      "recharge_bcm": 0.04,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 36,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.046,
+      "extraction_all_uses_bcm": 0.0221,
+      "rainfall_mm": 1074,
+      "recharge_bcm": 0.0497,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 36,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.047,
+      "extraction_all_uses_bcm": 0.039,
+      "rainfall_mm": 1099,
+      "recharge_bcm": 0.0508,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 37,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.028,
+      "extraction_all_uses_bcm": 0.0235,
+      "rainfall_mm": 622,
+      "recharge_bcm": 0.0302,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 37,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.029,
+      "extraction_all_uses_bcm": 0.0287,
+      "rainfall_mm": 647,
+      "recharge_bcm": 0.0313,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 38,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.0285,
+      "rainfall_mm": 630,
+      "recharge_bcm": 0.0324,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 38,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.045,
+      "rainfall_mm": 655,
+      "recharge_bcm": 0.0335,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 39,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.026,
+      "extraction_all_uses_bcm": 0.0125,
+      "rainfall_mm": 834,
+      "recharge_bcm": 0.0281,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 39,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.027,
+      "extraction_all_uses_bcm": 0.0224,
+      "rainfall_mm": 859,
+      "recharge_bcm": 0.0292,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 40,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.0195,
+      "rainfall_mm": 1010,
+      "recharge_bcm": 0.0324,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 40,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0047,
+      "rainfall_mm": 1035,
+      "recharge_bcm": 0.0335,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 41,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.042,
+      "extraction_all_uses_bcm": 0.0403,
+      "rainfall_mm": 678,
+      "recharge_bcm": 0.0454,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 41,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.043,
+      "extraction_all_uses_bcm": 0.0649,
+      "rainfall_mm": 703,
+      "recharge_bcm": 0.0464,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 43,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.046,
+      "extraction_all_uses_bcm": 0.0313,
+      "rainfall_mm": 694,
+      "recharge_bcm": 0.0497,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 43,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.047,
+      "extraction_all_uses_bcm": 0.0071,
+      "rainfall_mm": 719,
+      "recharge_bcm": 0.0508,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 44,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.044,
+      "extraction_all_uses_bcm": 0.0066,
+      "rainfall_mm": 1066,
+      "recharge_bcm": 0.0475,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 44,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.045,
+      "extraction_all_uses_bcm": 0.0212,
+      "rainfall_mm": 1091,
+      "recharge_bcm": 0.0486,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 45,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.014,
+      "extraction_all_uses_bcm": 0.0059,
+      "rainfall_mm": 566,
+      "recharge_bcm": 0.0151,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 45,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.015,
+      "extraction_all_uses_bcm": 0.0116,
+      "rainfall_mm": 591,
+      "recharge_bcm": 0.0162,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 46,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.048,
+      "extraction_all_uses_bcm": 0.0403,
+      "rainfall_mm": 1082,
+      "recharge_bcm": 0.0518,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 46,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.049,
+      "extraction_all_uses_bcm": 0.0485,
+      "rainfall_mm": 1107,
+      "recharge_bcm": 0.0529,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 47,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.018,
+      "extraction_all_uses_bcm": 0.0178,
+      "rainfall_mm": 582,
+      "recharge_bcm": 0.0194,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 47,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.019,
+      "extraction_all_uses_bcm": 0.0264,
+      "rainfall_mm": 607,
+      "recharge_bcm": 0.0205,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 49,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.024,
+      "extraction_all_uses_bcm": 0.0197,
+      "rainfall_mm": 766,
+      "recharge_bcm": 0.0259,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 49,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.025,
+      "extraction_all_uses_bcm": 0.0243,
+      "rainfall_mm": 791,
+      "recharge_bcm": 0.027,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 50,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.022,
+      "extraction_all_uses_bcm": 0.0211,
+      "rainfall_mm": 1138,
+      "recharge_bcm": 0.0238,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 50,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.023,
+      "extraction_all_uses_bcm": 0.0336,
+      "rainfall_mm": 463,
+      "recharge_bcm": 0.0248,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 51,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.012,
+      "rainfall_mm": 470,
+      "recharge_bcm": 0.0324,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 51,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0232,
+      "rainfall_mm": 495,
+      "recharge_bcm": 0.0335,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 52,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.038,
+      "extraction_all_uses_bcm": 0.0224,
+      "rainfall_mm": 502,
+      "recharge_bcm": 0.041,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 52,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.039,
+      "extraction_all_uses_bcm": 0.0059,
+      "rainfall_mm": 527,
+      "recharge_bcm": 0.0421,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 53,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.014,
+      "extraction_all_uses_bcm": 0.0136,
+      "rainfall_mm": 726,
+      "recharge_bcm": 0.0151,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 53,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.015,
+      "extraction_all_uses_bcm": 0.0235,
+      "rainfall_mm": 751,
+      "recharge_bcm": 0.0162,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 54,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.042,
+      "extraction_all_uses_bcm": 0.0193,
+      "rainfall_mm": 518,
+      "recharge_bcm": 0.0454,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 54,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.043,
+      "extraction_all_uses_bcm": 0.0348,
+      "rainfall_mm": 543,
+      "recharge_bcm": 0.0464,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 55,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.0195,
+      "rainfall_mm": 790,
+      "recharge_bcm": 0.0324,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 55,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0047,
+      "rainfall_mm": 815,
+      "recharge_bcm": 0.0335,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 56,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.014,
+      "extraction_all_uses_bcm": 0.0136,
+      "rainfall_mm": 726,
+      "recharge_bcm": 0.0151,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 56,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.015,
+      "extraction_all_uses_bcm": 0.0235,
+      "rainfall_mm": 751,
+      "recharge_bcm": 0.0162,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 57,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.04,
+      "extraction_all_uses_bcm": 0.054,
+      "rainfall_mm": 1050,
+      "recharge_bcm": 0.0432,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 57,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.041,
+      "extraction_all_uses_bcm": 0.0226,
+      "rainfall_mm": 1075,
+      "recharge_bcm": 0.0443,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 58,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.026,
+      "extraction_all_uses_bcm": 0.0177,
+      "rainfall_mm": 454,
+      "recharge_bcm": 0.0281,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 58,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.027,
+      "extraction_all_uses_bcm": 0.004,
+      "rainfall_mm": 479,
+      "recharge_bcm": 0.0292,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 59,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.038,
+      "extraction_all_uses_bcm": 0.0376,
+      "rainfall_mm": 1042,
+      "recharge_bcm": 0.041,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 59,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.039,
+      "extraction_all_uses_bcm": 0.062,
+      "rainfall_mm": 1067,
+      "recharge_bcm": 0.0421,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 60,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.032,
+      "extraction_all_uses_bcm": 0.0467,
+      "rainfall_mm": 638,
+      "recharge_bcm": 0.0346,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 60,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.033,
+      "extraction_all_uses_bcm": 0.0201,
+      "rainfall_mm": 663,
+      "recharge_bcm": 0.0356,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 61,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.04,
+      "extraction_all_uses_bcm": 0.032,
+      "rainfall_mm": 670,
+      "recharge_bcm": 0.0432,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 61,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.041,
+      "extraction_all_uses_bcm": 0.039,
+      "rainfall_mm": 695,
+      "recharge_bcm": 0.0443,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 62,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.048,
+      "extraction_all_uses_bcm": 0.0072,
+      "rainfall_mm": 702,
+      "recharge_bcm": 0.0518,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 62,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.049,
+      "extraction_all_uses_bcm": 0.024,
+      "rainfall_mm": 727,
+      "recharge_bcm": 0.0529,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 63,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.036,
+      "extraction_all_uses_bcm": 0.0551,
+      "rainfall_mm": 494,
+      "recharge_bcm": 0.0389,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 63,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.037,
+      "extraction_all_uses_bcm": 0.0215,
+      "rainfall_mm": 519,
+      "recharge_bcm": 0.04,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 64,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.0195,
+      "rainfall_mm": 1010,
+      "recharge_bcm": 0.0324,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 64,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0047,
+      "rainfall_mm": 1035,
+      "recharge_bcm": 0.0335,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 65,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.018,
+      "extraction_all_uses_bcm": 0.0178,
+      "rainfall_mm": 582,
+      "recharge_bcm": 0.0194,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 65,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.019,
+      "extraction_all_uses_bcm": 0.0264,
+      "rainfall_mm": 607,
+      "recharge_bcm": 0.0205,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 66,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.05,
+      "extraction_all_uses_bcm": 0.02,
+      "rainfall_mm": 710,
+      "recharge_bcm": 0.054,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 66,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.011,
+      "extraction_all_uses_bcm": 0.0082,
+      "rainfall_mm": 735,
+      "recharge_bcm": 0.0119,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 67,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.02,
+      "extraction_all_uses_bcm": 0.016,
+      "rainfall_mm": 910,
+      "recharge_bcm": 0.0216,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 67,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.021,
+      "extraction_all_uses_bcm": 0.0199,
+      "rainfall_mm": 935,
+      "recharge_bcm": 0.0227,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 68,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.01,
+      "extraction_all_uses_bcm": 0.0095,
+      "rainfall_mm": 1090,
+      "recharge_bcm": 0.0108,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 68,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.011,
+      "extraction_all_uses_bcm": 0.0154,
+      "rainfall_mm": 1115,
+      "recharge_bcm": 0.0119,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 69,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.042,
+      "extraction_all_uses_bcm": 0.0193,
+      "rainfall_mm": 518,
+      "recharge_bcm": 0.0454,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 69,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.043,
+      "extraction_all_uses_bcm": 0.0348,
+      "rainfall_mm": 543,
+      "recharge_bcm": 0.0464,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 70,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.048,
+      "extraction_all_uses_bcm": 0.0403,
+      "rainfall_mm": 862,
+      "recharge_bcm": 0.0518,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 70,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.049,
+      "extraction_all_uses_bcm": 0.0485,
+      "rainfall_mm": 887,
+      "recharge_bcm": 0.0529,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 71,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.028,
+      "extraction_all_uses_bcm": 0.0042,
+      "rainfall_mm": 942,
+      "recharge_bcm": 0.0302,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 71,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.029,
+      "extraction_all_uses_bcm": 0.0142,
+      "rainfall_mm": 967,
+      "recharge_bcm": 0.0313,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 72,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.032,
+      "extraction_all_uses_bcm": 0.0467,
+      "rainfall_mm": 638,
+      "recharge_bcm": 0.0346,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 72,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.033,
+      "extraction_all_uses_bcm": 0.0201,
+      "rainfall_mm": 663,
+      "recharge_bcm": 0.0356,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 73,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.026,
+      "extraction_all_uses_bcm": 0.0177,
+      "rainfall_mm": 454,
+      "recharge_bcm": 0.0281,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 73,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.027,
+      "extraction_all_uses_bcm": 0.004,
+      "rainfall_mm": 479,
+      "recharge_bcm": 0.0292,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 74,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.044,
+      "extraction_all_uses_bcm": 0.0066,
+      "rainfall_mm": 846,
+      "recharge_bcm": 0.0475,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 74,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.045,
+      "extraction_all_uses_bcm": 0.0212,
+      "rainfall_mm": 871,
+      "recharge_bcm": 0.0486,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 75,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.012,
+      "extraction_all_uses_bcm": 0.0169,
+      "rainfall_mm": 1098,
+      "recharge_bcm": 0.013,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 75,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.013,
+      "extraction_all_uses_bcm": 0.0079,
+      "rainfall_mm": 1123,
+      "recharge_bcm": 0.014,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 76,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.032,
+      "extraction_all_uses_bcm": 0.0243,
+      "rainfall_mm": 478,
+      "recharge_bcm": 0.0346,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 76,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.033,
+      "extraction_all_uses_bcm": 0.0317,
+      "rainfall_mm": 503,
+      "recharge_bcm": 0.0356,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 77,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.04,
+      "extraction_all_uses_bcm": 0.006,
+      "rainfall_mm": 510,
+      "recharge_bcm": 0.0432,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 77,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.041,
+      "extraction_all_uses_bcm": 0.0185,
+      "rainfall_mm": 535,
+      "recharge_bcm": 0.0443,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 78,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.012,
+      "rainfall_mm": 950,
+      "recharge_bcm": 0.0324,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 78,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.0232,
+      "rainfall_mm": 975,
+      "recharge_bcm": 0.0335,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 79,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.044,
+      "extraction_all_uses_bcm": 0.0361,
+      "rainfall_mm": 526,
+      "recharge_bcm": 0.0475,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 79,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.045,
+      "extraction_all_uses_bcm": 0.0437,
+      "rainfall_mm": 551,
+      "recharge_bcm": 0.0486,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 80,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.014,
+      "extraction_all_uses_bcm": 0.0136,
+      "rainfall_mm": 726,
+      "recharge_bcm": 0.0151,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 80,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.015,
+      "extraction_all_uses_bcm": 0.0235,
+      "rainfall_mm": 751,
+      "recharge_bcm": 0.0162,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 81,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.032,
+      "extraction_all_uses_bcm": 0.0467,
+      "rainfall_mm": 638,
+      "recharge_bcm": 0.0346,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 81,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.033,
+      "extraction_all_uses_bcm": 0.0201,
+      "rainfall_mm": 663,
+      "recharge_bcm": 0.0356,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 82,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.02,
+      "extraction_all_uses_bcm": 0.016,
+      "rainfall_mm": 1130,
+      "recharge_bcm": 0.0216,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 82,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.021,
+      "extraction_all_uses_bcm": 0.02,
+      "rainfall_mm": 455,
+      "recharge_bcm": 0.0227,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 83,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.03,
+      "extraction_all_uses_bcm": 0.0285,
+      "rainfall_mm": 630,
+      "recharge_bcm": 0.0324,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 83,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.031,
+      "extraction_all_uses_bcm": 0.045,
+      "rainfall_mm": 655,
+      "recharge_bcm": 0.0335,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 84,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.014,
+      "extraction_all_uses_bcm": 0.0059,
+      "rainfall_mm": 566,
+      "recharge_bcm": 0.0151,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 84,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.015,
+      "extraction_all_uses_bcm": 0.0116,
+      "rainfall_mm": 591,
+      "recharge_bcm": 0.0162,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 85,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.018,
+      "extraction_all_uses_bcm": 0.0106,
+      "rainfall_mm": 742,
+      "recharge_bcm": 0.0194,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 85,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.019,
+      "extraction_all_uses_bcm": 0.0028,
+      "rainfall_mm": 767,
+      "recharge_bcm": 0.0205,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 86,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.048,
+      "extraction_all_uses_bcm": 0.0072,
+      "rainfall_mm": 702,
+      "recharge_bcm": 0.0518,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 86,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.049,
+      "extraction_all_uses_bcm": 0.024,
+      "rainfall_mm": 727,
+      "recharge_bcm": 0.0529,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 87,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.036,
+      "extraction_all_uses_bcm": 0.0551,
+      "rainfall_mm": 494,
+      "recharge_bcm": 0.0389,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 87,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.037,
+      "extraction_all_uses_bcm": 0.0215,
+      "rainfall_mm": 519,
+      "recharge_bcm": 0.04,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 88,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.028,
+      "extraction_all_uses_bcm": 0.0235,
+      "rainfall_mm": 1102,
+      "recharge_bcm": 0.0302,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 88,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.029,
+      "extraction_all_uses_bcm": 0.0287,
+      "rainfall_mm": 1127,
+      "recharge_bcm": 0.0313,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 89,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.036,
+      "extraction_all_uses_bcm": 0.0054,
+      "rainfall_mm": 1134,
+      "recharge_bcm": 0.0389,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 89,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.037,
+      "extraction_all_uses_bcm": 0.0159,
+      "rainfall_mm": 459,
+      "recharge_bcm": 0.04,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 104,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.036,
+      "extraction_all_uses_bcm": 0.0054,
+      "rainfall_mm": 914,
+      "recharge_bcm": 0.0389,
+      "category": "Hilly Area",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 104,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.037,
+      "extraction_all_uses_bcm": 0.0159,
+      "rainfall_mm": 939,
+      "recharge_bcm": 0.04,
+      "category": "Safe",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 105,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.044,
+      "extraction_all_uses_bcm": 0.0647,
+      "rainfall_mm": 946,
+      "recharge_bcm": 0.0475,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 105,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.045,
+      "extraction_all_uses_bcm": 0.0302,
+      "rainfall_mm": 971,
+      "recharge_bcm": 0.0486,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 108,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.028,
+      "extraction_all_uses_bcm": 0.0445,
+      "rainfall_mm": 1042,
+      "recharge_bcm": 0.0302,
+      "category": "Over Exploited",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 108,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.029,
+      "extraction_all_uses_bcm": 0.0186,
+      "rainfall_mm": 1067,
+      "recharge_bcm": 0.0313,
+      "category": "Saline",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 109,
+      "assessment_year": "2023-2024",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.036,
+      "extraction_all_uses_bcm": 0.0281,
+      "rainfall_mm": 1074,
+      "recharge_bcm": 0.0389,
+      "category": "Semi Critical",
+      "dtw_m_bgl": null
+    },
+    {
+      "district_id": null,
+      "village_id": 109,
+      "assessment_year": "2024-2025",
+      "is_predicted": false,
+      "extractable_resources_bcm": 0.037,
+      "extraction_all_uses_bcm": 0.0363,
+      "rainfall_mm": 1099,
+      "recharge_bcm": 0.04,
+      "category": "Critical",
+      "dtw_m_bgl": null
+    }
+  ]
+}

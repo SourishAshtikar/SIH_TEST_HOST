@@ -1,0 +1,60 @@
+{
+  "practices": [
+    {
+      "id": "Flood",
+      "name": "Flood Irrigation (पारंपरिक बहाव)",
+      "waterEfficiency": "Low",
+      "waterSavingsPercentage": 0,
+      "energySavingsPercentage": 0
+    },
+    {
+      "id": "Furrow",
+      "name": "Furrow Irrigation (नाली सिंचाई)",
+      "waterEfficiency": "Medium-Low",
+      "waterSavingsPercentage": 15,
+      "energySavingsPercentage": 10
+    },
+    {
+      "id": "Sprinkler",
+      "name": "Sprinkler Irrigation (फव्वारा सिंचाई)",
+      "waterEfficiency": "High",
+      "waterSavingsPercentage": 35,
+      "energySavingsPercentage": 25
+    },
+    {
+      "id": "Drip",
+      "name": "Drip Irrigation (टपक सिंचाई)",
+      "waterEfficiency": "Very High",
+      "waterSavingsPercentage": 55,
+      "energySavingsPercentage": 40
+    },
+    {
+      "id": "Underground Pipeline & AWD",
+      "name": "Underground Pipeline & AWD (भूमिगत पाइपलाइन)",
+      "waterEfficiency": "High",
+      "waterSavingsPercentage": 30,
+      "energySavingsPercentage": 20
+    },
+    {
+      "id": "Border",
+      "name": "Border Strip Irrigation (सीमा पट्टी सिंचाई)",
+      "waterEfficiency": "Medium",
+      "waterSavingsPercentage": 20,
+      "energySavingsPercentage": 12
+    },
+    {
+      "id": "RaisedBed",
+      "name": "Raised Bed Planting (उभरी क्यारी सिंचाई)",
+      "waterEfficiency": "Medium-High",
+      "waterSavingsPercentage": 30,
+      "energySavingsPercentage": 18
+    },
+    {
+      "id": "Pitcher",
+      "name": "Pitcher / Pot Irrigation (घड़ा सिंचाई)",
+      "waterEfficiency": "Very High",
+      "waterSavingsPercentage": 60,
+      "energySavingsPercentage": 35
+    }
+  ]
+}

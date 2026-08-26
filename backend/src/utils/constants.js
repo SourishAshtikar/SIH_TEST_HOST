@@ -1,0 +1,18 @@
+const SYSTEM_ROLES = Object.freeze([
+  'VILLAGE_HEAD',
+  'AUDITOR',
+  'GOVERNMENT_EMPLOYEE',
+  'ADMIN'
+]);
+
+const PUBLIC_REGISTRATION_ROLES = Object.freeze([
+  'VILLAGE_HEAD',
+  'AUDITOR',
+  'GOVERNMENT_EMPLOYEE'
+]);
+
+module.exports = {
+  ALLOWED_ROLES: SYSTEM_ROLES,
+  SYSTEM_ROLES,
+  PUBLIC_REGISTRATION_ROLES
+};

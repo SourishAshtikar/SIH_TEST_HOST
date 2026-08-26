@@ -1,0 +1,287 @@
+{
+  "crops": [
+    {
+      "id": 1,
+      "name": "Paddy / Rice (धान / जीरी)",
+      "season": "KHARIF",
+      "waterRequirementClass": "Very High",
+      "priority": "Very High",
+      "suitablePractices": ["Underground Pipeline & AWD", "Controlled Irrigation", "Drip", "Flood"],
+      "waterSavingPractices": ["Underground Pipeline & AWD", "Controlled Irrigation"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Nursery & Early Tillering (Days 0-25)", "guidance": "Shallow 2-3 cm moisture depth." },
+        { "stage": "STAGE_2", "name": "Panicle Initiation (Days 25-50)", "guidance": "Critical water demand. Practice AWD." },
+        { "stage": "STAGE_3", "name": "Flowering & Grain Filling (Days 50-80)", "guidance": "Prevent soil drying." },
+        { "stage": "STAGE_4", "name": "Ripening (Days 80-110)", "guidance": "Stop watering 10 days prior to harvest." }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Cotton (कपास)",
+      "season": "KHARIF",
+      "waterRequirementClass": "High",
+      "priority": "High",
+      "suitablePractices": ["Drip", "Furrow", "Flood"],
+      "waterSavingPractices": ["Drip"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Vegetative Branching (Days 0-30)", "guidance": "Avoid waterlogging." },
+        { "stage": "STAGE_2", "name": "Square Formation (Days 30-60)", "guidance": "Controlled drip irrigation." },
+        { "stage": "STAGE_3", "name": "Boll Formation (Days 60-100)", "guidance": "Peak water requirement." }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bajra / Pearl Millet (बाजरा)",
+      "season": "KHARIF",
+      "waterRequirementClass": "Low-Medium",
+      "priority": "Low-Medium",
+      "suitablePractices": ["Sprinkler", "Rainfed", "Flood"],
+      "waterSavingPractices": ["Sprinkler", "Rainfed"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Tillering", "guidance": "Light irrigation during dry spells." },
+        { "stage": "STAGE_2", "name": "Flowering", "guidance": "Critical moisture stage." }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Maize (मक्का)",
+      "season": "KHARIF",
+      "waterRequirementClass": "Medium",
+      "priority": "Medium",
+      "suitablePractices": ["Furrow", "Sprinkler", "Drip"],
+      "waterSavingPractices": ["Drip", "Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Tasseling Stage", "guidance": "Critical water sensitivity." },
+        { "stage": "STAGE_2", "name": "Silking & Grain Filling", "guidance": "Ensure adequate soil moisture." }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Guar / Cluster Bean (गवार)",
+      "season": "KHARIF",
+      "waterRequirementClass": "Low-Medium",
+      "priority": "Low-Medium",
+      "suitablePractices": ["Rainfed", "Sprinkler"],
+      "waterSavingPractices": ["Rainfed", "Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Flowering", "guidance": "Light sprinkler irrigation." },
+        { "stage": "STAGE_2", "name": "Pod Formation", "guidance": "Prevent severe moisture stress." }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sugarcane (गन्ना)",
+      "season": "KHARIF",
+      "waterRequirementClass": "Very High",
+      "priority": "Very High",
+      "suitablePractices": ["Drip", "Furrow", "Surface"],
+      "waterSavingPractices": ["Drip"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Formative Phase", "guidance": "Frequent light drip irrigations." },
+        { "stage": "STAGE_2", "name": "Grand Growth Phase", "guidance": "Peak water demand." }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Wheat (गेहूं)",
+      "season": "RABI",
+      "waterRequirementClass": "High",
+      "priority": "High",
+      "suitablePractices": ["Controlled Irrigation", "Sprinkler", "Flood", "Border"],
+      "waterSavingPractices": ["Sprinkler", "Controlled Irrigation"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Crown Root Initiation (CRI) (Day 21)", "guidance": "First critical watering." },
+        { "stage": "STAGE_2", "name": "Tillering & Jointing (Days 40-60)", "guidance": "Maintain moderate soil moisture." },
+        { "stage": "STAGE_3", "name": "Flowering (Days 70-85)", "guidance": "Critical stage for grain formation." },
+        { "stage": "STAGE_4", "name": "Dough Stage (Days 95-110)", "guidance": "Final light irrigation." }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Mustard (सरसों)",
+      "season": "RABI",
+      "waterRequirementClass": "Low-Medium",
+      "priority": "Low-Medium",
+      "suitablePractices": ["Sprinkler", "Surface", "Flood"],
+      "waterSavingPractices": ["Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Pre-Flowering (Days 30-35)", "guidance": "First irrigation." },
+        { "stage": "STAGE_2", "name": "Pod Filling (Days 60-65)", "guidance": "Second irrigation." }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Barley (जौ)",
+      "season": "RABI",
+      "waterRequirementClass": "Medium",
+      "priority": "Medium",
+      "suitablePractices": ["Sprinkler", "Surface", "Flood"],
+      "waterSavingPractices": ["Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Tillering", "guidance": "First irrigation." },
+        { "stage": "STAGE_2", "name": "Boot Stage", "guidance": "Second irrigation." }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Gram / Chickpea (चना)",
+      "season": "RABI",
+      "waterRequirementClass": "Low-Medium",
+      "priority": "Low-Medium",
+      "suitablePractices": ["Rainfed", "Sprinkler"],
+      "waterSavingPractices": ["Rainfed", "Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Pre-Flowering", "guidance": "Light irrigation if dry." },
+        { "stage": "STAGE_2", "name": "Pod Development", "guidance": "Prevent waterlogging." }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Potato (आलू)",
+      "season": "RABI",
+      "waterRequirementClass": "Medium-High",
+      "priority": "Medium-High",
+      "suitablePractices": ["Drip", "Sprinkler", "Surface", "Furrow"],
+      "waterSavingPractices": ["Drip", "Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Stolon Formation", "guidance": "Frequent shallow irrigations." },
+        { "stage": "STAGE_2", "name": "Tuber Bulking", "guidance": "High soil moisture required." }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Moong / Green Gram (मूंग)",
+      "season": "ZAID",
+      "waterRequirementClass": "Low-Medium",
+      "priority": "Low-Medium",
+      "suitablePractices": ["Sprinkler", "Drip"],
+      "waterSavingPractices": ["Sprinkler", "Drip"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Flower Initiation", "guidance": "Maintain light moisture." },
+        { "stage": "STAGE_2", "name": "Pod Development", "guidance": "Final light sprinkler application." }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Summer Vegetables (सब्जियां)",
+      "season": "ZAID",
+      "waterRequirementClass": "Medium",
+      "priority": "Medium",
+      "suitablePractices": ["Drip", "Sprinkler"],
+      "waterSavingPractices": ["Drip"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Vegetative Growth", "guidance": "Daily automated drip cycles." },
+        { "stage": "STAGE_2", "name": "Fruiting", "guidance": "Maintain constant root zone moisture." }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Sunflower (सूरजमुखी)",
+      "season": "KHARIF_RABI",
+      "waterRequirementClass": "Medium",
+      "priority": "Medium",
+      "suitablePractices": ["Drip", "Sprinkler", "Furrow"],
+      "waterSavingPractices": ["Drip", "Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Seedling Establishment", "guidance": "Light irrigation at 7-10 day intervals." },
+        { "stage": "STAGE_2", "name": "Bud Formation", "guidance": "Critical water demand period." },
+        { "stage": "STAGE_3", "name": "Grain Filling", "guidance": "Avoid waterlogging during ripening." }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Jowar / Sorghum (ज्वार)",
+      "season": "KHARIF",
+      "waterRequirementClass": "Low-Medium",
+      "priority": "Low-Medium",
+      "suitablePractices": ["Sprinkler", "Rainfed", "Flood"],
+      "waterSavingPractices": ["Sprinkler", "Rainfed"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Germination & Establishment", "guidance": "Pre-sowing irrigation essential." },
+        { "stage": "STAGE_2", "name": "Boot & Heading", "guidance": "Critical irrigation if rainfall is absent." }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Groundnut (मूंगफली)",
+      "season": "KHARIF",
+      "waterRequirementClass": "Medium",
+      "priority": "Medium",
+      "suitablePractices": ["Drip", "Sprinkler", "Furrow"],
+      "waterSavingPractices": ["Drip", "Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Pegging Stage", "guidance": "Most critical moisture period." },
+        { "stage": "STAGE_2", "name": "Pod Filling", "guidance": "Avoid water stress during pod development." }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Masoor / Lentil (मसूर)",
+      "season": "RABI",
+      "waterRequirementClass": "Low",
+      "priority": "Low",
+      "suitablePractices": ["Rainfed", "Sprinkler"],
+      "waterSavingPractices": ["Rainfed", "Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Flowering (Day 40-50)", "guidance": "One light irrigation if soil is very dry." },
+        { "stage": "STAGE_2", "name": "Pod Fill", "guidance": "Second optional irrigation." }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Turmeric (हल्दी)",
+      "season": "KHARIF",
+      "waterRequirementClass": "Medium-High",
+      "priority": "Medium-High",
+      "suitablePractices": ["Drip", "Sprinkler"],
+      "waterSavingPractices": ["Drip"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Rhizome Sprouting", "guidance": "Maintain consistent soil moisture." },
+        { "stage": "STAGE_2", "name": "Vegetative Growth", "guidance": "Frequent light drip irrigations." },
+        { "stage": "STAGE_3", "name": "Rhizome Development", "guidance": "Do not allow drought stress." }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Onion (प्याज)",
+      "season": "RABI_ZAID",
+      "waterRequirementClass": "Medium",
+      "priority": "Medium",
+      "suitablePractices": ["Drip", "Sprinkler", "Furrow"],
+      "waterSavingPractices": ["Drip", "Sprinkler"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Bulb Initiation", "guidance": "Maintain even moisture for uniform bulb size." },
+        { "stage": "STAGE_2", "name": "Bulb Enlargement", "guidance": "Peak water demand — drip recommended." },
+        { "stage": "STAGE_3", "name": "Maturation", "guidance": "Stop irrigation 2 weeks before harvest." }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Tomato (टमाटर)",
+      "season": "ZAID",
+      "waterRequirementClass": "Medium-High",
+      "priority": "Medium-High",
+      "suitablePractices": ["Drip", "Sprinkler"],
+      "waterSavingPractices": ["Drip"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Flowering", "guidance": "Avoid blossom drop — maintain even moisture." },
+        { "stage": "STAGE_2", "name": "Fruit Set", "guidance": "Critical period — do not allow wilting." },
+        { "stage": "STAGE_3", "name": "Fruit Development", "guidance": "Reduce frequency near harvest to improve lycopene." }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Watermelon (तरबूज)",
+      "season": "ZAID",
+      "waterRequirementClass": "Medium",
+      "priority": "Medium",
+      "suitablePractices": ["Drip", "Furrow"],
+      "waterSavingPractices": ["Drip"],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Vine Growth", "guidance": "Regular light irrigations." },
+        { "stage": "STAGE_2", "name": "Fruit Set & Swelling", "guidance": "Peak water demand." },
+        { "stage": "STAGE_3", "name": "Ripening", "guidance": "Reduce irrigation 2 weeks before harvest for sugar concentration." }
+      ]
+    }
+  ]
+}

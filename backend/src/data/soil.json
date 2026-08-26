@@ -1,0 +1,22 @@
+{
+  "zoneSoilMapping": {
+    "NORTH_HARYANA": {
+      "districts": ["Karnal", "Kurukshetra", "Ambala", "Panchkula", "Yamunanagar", "Kaithal"],
+      "soilType": "Loamy Alluvium",
+      "texture": "Medium",
+      "drainage": "Good"
+    },
+    "SOUTH_WEST_HARYANA": {
+      "districts": ["Hisar", "Sirsa", "Bhiwani", "Mahendragarh", "Palwal", "Gurugram", "Nuh", "Rewari", "Charkhi Dadri"],
+      "soilType": "Sandy Loam",
+      "texture": "Light / Coarse",
+      "drainage": "Excessive"
+    },
+    "CENTRAL_HARYANA": {
+      "districts": ["Rohtak", "Jhajjar", "Jind", "Sonipat", "Panipat", "Fatehabad"],
+      "soilType": "Clay Loam",
+      "texture": "Medium-Heavy",
+      "drainage": "Moderate"
+    }
+  }
+}

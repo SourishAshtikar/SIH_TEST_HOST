@@ -1,0 +1,69 @@
+{
+  "crops": [
+    {
+      "id": 1,
+      "name": "Rice (धान/जीरी)",
+      "seasonId": 1,
+      "waterRequirementClass": "High",
+      "suitableIrrigationPractices": [2, 3],
+      "unsuitableIrrigationPractices": [1],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Nursery & Tillering", "guidance": "Shallow 2-3 cm moisture depth." },
+        { "stage": "STAGE_2", "name": "Panicle Initiation", "guidance": "Critical water demand. Use drip irrigation." },
+        { "stage": "STAGE_3", "name": "Flowering & Grain Filling", "guidance": "Prevent soil drying." },
+        { "stage": "STAGE_4", "name": "Ripening", "guidance": "Stop watering 10 days prior to harvest." }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Wheat (गेहूं)",
+      "seasonId": 2,
+      "waterRequirementClass": "Medium",
+      "suitableIrrigationPractices": [2, 3],
+      "unsuitableIrrigationPractices": [],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Crown Root Initiation (CRI)", "guidance": "First critical watering 21 days after sowing." },
+        { "stage": "STAGE_2", "name": "Tillering & Jointing", "guidance": "Maintain moderate soil moisture." },
+        { "stage": "STAGE_3", "name": "Flowering", "guidance": "Critical stage for grain formation." },
+        { "stage": "STAGE_4", "name": "Dough Stage", "guidance": "Final light irrigation." }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cotton (कपास)",
+      "seasonId": 1,
+      "waterRequirementClass": "High",
+      "suitableIrrigationPractices": [2, 3],
+      "unsuitableIrrigationPractices": [1],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Vegetative Branching", "guidance": "Avoid waterlogging." },
+        { "stage": "STAGE_2", "name": "Square Formation", "guidance": "Controlled drip irrigation." },
+        { "stage": "STAGE_3", "name": "Boll Formation & Bursting", "guidance": "Peak water requirement." }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Mustard (सरसों)",
+      "seasonId": 2,
+      "waterRequirementClass": "Low",
+      "suitableIrrigationPractices": [3, 2],
+      "unsuitableIrrigationPractices": [1],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Pre-Flowering", "guidance": "30-35 days after sowing." },
+        { "stage": "STAGE_2", "name": "Pod Filling", "guidance": "60-65 days after sowing." }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Watermelon (तरबूज)",
+      "seasonId": 3,
+      "waterRequirementClass": "Medium",
+      "suitableIrrigationPractices": [2, 3],
+      "unsuitableIrrigationPractices": [1],
+      "criticalIrrigationStages": [
+        { "stage": "STAGE_1", "name": "Vine Extension", "guidance": "Frequent light drip applications." },
+        { "stage": "STAGE_2", "name": "Fruit Development", "guidance": "Peak moisture required." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend services for the Groundwater Adoption & Agricultural Irrigation Platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "node tests/auth.test.js && node tests/farm.test.js && node tests/cropRecord.test.js && node tests/audit.test.js && node tests/scheme.test.js && node tests/sustainabilityScore.test.js && node tests/groundwaterHeatmap.test.js && node tests/groundwaterAssessment.test.js && node tests/mlRecharge.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "scoringWeights": {
+    "waterSavingCapability": 40,
+    "soilCompatibility": 30,
+    "cropSuitability": 20,
+    "rainfallFactor": 10
+  },
+  "waterSavingsMetrics": {
+    "drip": {
+      "percentage": 55,
+      "m3PerHa": 4800,
+      "energyPercentage": 40
+    },
+    "sprinkler": {
+      "percentage": 35,
+      "m3PerHa": 3100,
+      "energyPercentage": 25
+    }
+  }
+}

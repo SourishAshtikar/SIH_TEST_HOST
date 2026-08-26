@@ -1,0 +1,28 @@
+{
+  "groundwaterThresholds": {
+    "NORMAL": {
+      "maxDepthMeters": 5.0,
+      "priority": "LOW",
+      "action": "MAINTAIN_OR_OPTIMIZE"
+    },
+    "HIGH": {
+      "minDepthMeters": 5.01,
+      "maxDepthMeters": 10.0,
+      "priority": "HIGH",
+      "action": "CHANGE_RECOMMENDED"
+    },
+    "CRITICAL": {
+      "minDepthMeters": 10.01,
+      "priority": "CRITICAL",
+      "action": "IMMEDIATE_CHANGE_REQUIRED"
+    },
+    "decliningTrendOverrideDepthMeters": 8.5
+  },
+  "ruleWeights": {
+    "criticalGroundwater": 40,
+    "decliningTrend": 15,
+    "highWaterCrop": 20,
+    "soilCompatibility": 15,
+    "deficientRainfall": 10
+  }
+}
